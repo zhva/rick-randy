@@ -1,159 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rick Randy - Web Developer</title>
-</head>
-<body>
-    <header class="header-wrapper">
-        <div class="logo-wrapper">
-            <img src="" alt="" srcset="">
-        </div>
-        <nav class="nav-wrapper">
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Books</a></li>
-                <li><a href="#">workshops</a></li>
-                <li><a href="#">Consulting</a></li>
-            </ul>
-        </nav>
-        <div>
-            <a href="#">Login</a>
-            <a href="#">Sign Up</a>
-        </div>
-    </header>
-    <main class="content-wrapper">
-        <section class="section-hero">
-            <div class="hero-content-wrapper">
-                <span>Rick Randy</span>
-                <h1>Why you rightfully <span>hate</span>JavaScript</h1>
-                <p>The most loved book series in the web community in 2021. The series has won the "Best Book
-                    for Web Developers" award for the past 3 years. The final book in this series, "JavaScript -
-                    The Apocalypse Is Coming", is coming soon. Get your copy here!
-                </p>
-                <a href="#">Learn More</a>
-            </div>
-            <div class="hero-image-wrapper">
-                <img src="" alt="" srcset="">
-            </div>
-        </section>
-        <section class="section-about">
-            <div>
-                <div>
-                    <h2 class="about-content-wrapper">Hi I'm<span>Rick Randy</span></h2>
-                    <div>
-                        <p>I work as web developer and trainer. I can help you to build web products or improve your
-                            existing applications. I’m available for freelance projects or specific knowledge trainings
-                            and workshops. Feel free to contact me with your requirements.
-                        </p>
-                        <p>More than 10 years of experience working with companies from all over the world. I design
-                            and develop web applications for business and personal use, and provide training to improve
-                            the skills of people. To share my accumulated knowledge, I also write books.
-                        </p>
-                    </div>
-                    <a href="#">More about me</a>
-                    <div class="quote-wrapper">
-                        <blockquote>“Hold my beer, I’m going to learn a new JS Framework”</blockquote>
-                    </div>
-                </div>
-            </div>
-            <div class="about-image-wrapper">
-                <img src="" alt="" srcset="">
-            </div>
-        </section>
-        <section class="section-books">
-        <main class="content-wrapper">
-            <div class="book-info info-wrapper">
-                <div>
-                    <h1>My true passion - <span>Books</span></h1>
-                    <p>I want to share my expertise with everyone in the world who is interested in web development.
-                        And I would never miss a chance to take the mick out of JavaScript! Five years ago, I published
-                        the first book of my book-series "Why you rightfully hate JavaScript". It quickly became a
-                        bestseller in its category. You can now preorder the last book of the series “JavaScript –
-                        the Apocalypse is Coming”!
-                    </p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div>
-                        <img src="" alt="" srcset="">
-                    </div>
-                    <a href="#">Order now</a>
-                </div>
-                <div>
-                    <div>
-                        <img src="" alt="" srcset="">
-                        <div class="books-hidden">
-                            <h3>The Comming of the Web people</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="" alt="" srcset="">
-                        <div class="books-hidden">
-                            <h3>Tears of the Web Developer</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="" alt="" srcset="">
-                        <div class="books-hidden">
-                            <h3>The code of a web application</h3>
-                            <p>Second book of the series - more serious but still provides great knowledge and
-                                practical examples</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section-work">
-            <div class="work-cover-img">
-            </div>
-            <div>
-                <h2>My latest<span>Work</span></h2>
-                <p>Website for a company who’s doing private snowboard sessions in Zell am See, Austria. The main
-                    goal was to give the website a laidback feeling, like snowboarding.
-                </p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <div>
-                    <img src="" alt="" srcset="">
-                </div>
-            </div>
-            <div class="quote-wrapper">
-                <blockquote>“JavaScript is a lot like English; No one knows how to use semicolons properly”</blockquote>
-            </div>
-        </section>
-        <section class="section-contact">
-            <div>
-                <h2>Contact<span>Me</span></h2>
-            </div>
-            <div>
-                <input type="text" name="name" placeholder="Full Name">
-                <input type="email" name="email" placeholder="Email Address">
-                <textarea name="message" id="messageId" cols="30" rows="10" placeholder="Write youe message here"></textarea>
-                <a href="#">Send message</a>
-            </div>
-            <div>
-                <div>
-                    <p><span>My Cellphone</span> +436641234567</p>
-                </div>
-                <div>
-                    <p><span>My Email</span> rick.randy@rr-studio.com</p>
-                </div>
-                <div class="stamp-wrapper">
-                    <p><span>to:</span>Rick Randy</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer-wrapper">
-    </footer>
+<?php
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
 
-</body>
-</html>
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define( 'WP_USE_THEMES', true );
+
+/** Loads the WordPress Environment and Template */
+require __DIR__ . '/wp-blog-header.php';
