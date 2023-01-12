@@ -1,0 +1,49 @@
+/* source-sans-pro-200 - latin */
+@font-face {
+    font-family: 'Abril Fatface';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/AbrilFatface-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/AbrilFatface-Regular.eot?#iefix') format('embedded-opentype'),  /* IE6-IE8 */
+        url('../fonts/AbrilFatface-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/AbrilFatface-Regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/AbrilFatface-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/AbrilFatface-Regular.svg#AbrilFatface-Regular') format('svg');  /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Chiller';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Chiller-Regular.eot');
+    src: url('../fonts/Chiller-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Chiller-Regular.woff2') format('woff2'),
+        url('../fonts/Chiller-Regular.woff') format('woff'),
+        url('../fonts/Chiller-Regular.ttf') format('truetype'),
+        url('../fonts/Chiller-Regular.svg#Chiller-Regular') format('svg');
+}
+
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Poppins-Regular.eot');
+    src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff'),
+        url('../fonts/Poppins-Regular.ttf') format('truetype'),
+        url('../fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-style: normal;
+    src: url('../fonts/Poppins-SemiBold.eot');
+    src: url('../fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBold.woff') format('woff'),
+        url('../fonts/Poppins-SemiBold.ttf') format('truetype'),
+        url('../fonts/Poppins-SemiBold.svg#Poppins-SemiBold') format('svg');
+}
