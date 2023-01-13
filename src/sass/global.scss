@@ -6,11 +6,31 @@
     font-family: 'Poppins';
     font-weight: normal;
 }
+h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+h1 > span,
+h2 > span {
+    font-weight: 600;
+}
 
 a {
     text-decoration: none;
 }
-
+p {
+    line-height: 26px;
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+section {
+    margin: 0 auto;
+    width: 90%;
+}
 .button {
     padding: 10px 32px 10px 35px;
     height: 55px;
@@ -20,6 +40,7 @@ a {
 }
 .button-primary {
     background-color: $primary;
+    border: 2px solid $primary;
 }
 .button-primary:hover {
     background-color: $white;
@@ -27,6 +48,7 @@ a {
 }
 .button-secondary {
     background-color: $black;
+    border: 2px solid $black;
     color: $white;
 }
 .button-secondary:hover {
@@ -35,3 +57,10 @@ a {
     color: $black;
 }
 
+.heading-wrapper-braces {
+    background-image: url('../images/brace_left.svg'), url('../images/brace_right.svg');
+    background-position: left top, right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 5px 70px 30px 70px;
+}

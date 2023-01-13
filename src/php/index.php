@@ -53,7 +53,7 @@
         <section class="section-about">
             <div>
                 <div>
-                    <h2 class="about-content-wrapper">Hi I'm<span>Rick Randy</span></h2>
+                    <h2 class="about-content-wrapper">Hi I'm <span>Rick Randy</span></h2>
                     <div>
                         <p>I work as web developer and trainer. I can help you to build web products or improve your
                             existing applications. I’m available for freelance projects or specific knowledge trainings
@@ -76,8 +76,8 @@
         </section>
         <section class="section-books">
             <div class="book-info info-wrapper">
-                <div>
-                    <h1>My true passion - <span>Books</span></h1>
+                <div class="heading-wrapper-braces">
+                    <h2>My true passion - <span>Books</span></h2>
                     <p>I want to share my expertise with everyone in the world who is interested in web development.
                         And I would never miss a chance to take the mick out of JavaScript! Five years ago, I published
                         the first book of my book-series "Why you rightfully hate JavaScript". It quickly became a
@@ -86,25 +86,26 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="books-content">
                 <div>
-                    <div>
-                        <img src="" alt="" srcset="">
+                    <div class="block-container">
+                        <img class="block" src="<?php echo get_template_directory_uri();?>/images/Book_Apocalypse.webp" alt="Cover of the book Javascript the Apocalypse is coming" srcset="">
+                        <div class="border"></div>
                     </div>
                     <a href="#" class="button button-primary">Order now</a>
                 </div>
-                <div>
-                    <div>
-                        <img src="" alt="" srcset="">
+                <div class="books-grid-container">
+                    <div class="books-grid-item">
+                        <img src="<?php echo get_template_directory_uri();?>/images/Book_Tears.webp" alt="Cover of the book The Comming of the Web People" srcset="">
                         <div class="books-hidden">
-                            <h3>The Comming of the Web people</h3>
+                            <h3>The Comming of the Web People</h3>
                             <p>The first book of the series - won over millions of readers. Describes the upcoming
                                 development of the web industry
                             </p>
                         </div>
                     </div>
-                    <div>
-                        <img src="" alt="" srcset="">
+                    <div class="books-grid-item">
+                        <img src="<?php echo get_template_directory_uri();?>/images/Book_People.webp" alt="Cover of the book Tears of the Web Developer" srcset="">
                         <div class="books-hidden">
                             <h3>Tears of the Web Developer</h3>
                             <p>The second book of the series -  is the ultimate guide for those who have ever felt
@@ -112,8 +113,8 @@
                             </p>
                         </div>
                     </div>
-                    <div>
-                        <img src="" alt="" srcset="">
+                    <div class="books-grid-item">
+                        <img src="<?php echo get_template_directory_uri();?>/images/Book_Code.webp" alt="Cover of the book The code of a web application" srcset="">
                         <div class="books-hidden">
                             <h3>The code of a web application</h3>
                             <p>Second book of the series - more serious but still provides great knowledge and
