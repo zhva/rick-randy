@@ -57,29 +57,29 @@ table {
   font-family: "Abril Fatface";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/AbrilFatface-Regular.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/AbrilFatface-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AbrilFatface-Regular.woff2") format("woff2"), url("../fonts/AbrilFatface-Regular.woff") format("woff"), url("../fonts/AbrilFatface-Regular.ttf") format("truetype"), url("../fonts/AbrilFatface-Regular.svg#AbrilFatface-Regular") format("svg"); /* Legacy iOS */
+  src: url("../fonts/abril_fatface/AbrilFatface-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/abril_fatface/AbrilFatface-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/abril_fatface/AbrilFatface-Regular.woff2") format("woff2"), url("../fonts/abril_fatface/AbrilFatface-Regular.woff") format("woff"), url("../fonts/abril_fatface/AbrilFatface-Regular.ttf") format("truetype"), url("../fonts/abril_fatface/AbrilFatface-Regular.svg#AbrilFatface-Regular") format("svg"); /* Legacy iOS */
 }
 @font-face {
   font-family: "Chiller";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/Chiller-Regular.eot");
-  src: url("../fonts/Chiller-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Chiller-Regular.woff2") format("woff2"), url("../fonts/Chiller-Regular.woff") format("woff"), url("../fonts/Chiller-Regular.ttf") format("truetype"), url("../fonts/Chiller-Regular.svg#Chiller-Regular") format("svg");
+  src: url("../fonts/chiller/Chiller-Regular.eot");
+  src: url("../fonts/chiller/Chiller-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/chiller/Chiller-Regular.woff2") format("woff2"), url("../fonts/chiller/Chiller-Regular.woff") format("woff"), url("../fonts/chiller/Chiller-Regular.ttf") format("truetype"), url("../fonts/chiller/Chiller-Regular.svg#Chiller-Regular") format("svg");
 }
 @font-face {
   font-family: "Poppins";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/Poppins-Regular.eot");
-  src: url("../fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("truetype"), url("../fonts/Poppins-Regular.svg#Poppins-Regular") format("svg");
+  src: url("../fonts/poppins/Poppins-Regular.eot");
+  src: url("../fonts/poppins/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins/Poppins-Regular.woff2") format("woff2"), url("../fonts/poppins/Poppins-Regular.woff") format("woff"), url("../fonts/poppins/Poppins-Regular.ttf") format("truetype"), url("../fonts/poppins/Poppins-Regular.svg#Poppins-Regular") format("svg");
 }
 @font-face {
   font-family: "Poppins";
   font-weight: 600;
   font-style: normal;
-  src: url("../fonts/Poppins-SemiBold.eot");
-  src: url("../fonts/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/Poppins-SemiBold.woff") format("woff"), url("../fonts/Poppins-SemiBold.ttf") format("truetype"), url("../fonts/Poppins-SemiBold.svg#Poppins-SemiBold") format("svg");
+  src: url("../fonts/poppins/Poppins-SemiBold.eot");
+  src: url("../fonts/poppins/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/poppins/Poppins-SemiBold.woff") format("woff"), url("../fonts/poppins/Poppins-SemiBold.ttf") format("truetype"), url("../fonts/poppins/Poppins-SemiBold.svg#Poppins-SemiBold") format("svg");
 }
 .hidden {
   display: none;
@@ -110,6 +110,7 @@ a {
   height: 55px;
   border-radius: 30px;
   color: hsl(0deg, 0%, 0%);
+  font-weight: 600;
 }
 
 .button-primary {
