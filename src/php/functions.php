@@ -4,6 +4,8 @@ function load_styles_and_scripts() {
     wp_enqueue_script('main', get_template_directori_uri() .'/js/main.js', array(), '1.0.0', true);
 }
 
+add_action('wp_enqueue_scripts', 'wp_enqueue_style');
+
 // Add theme support for Featured Images
 add_theme_support('post-thumbnails', array(
     'post',

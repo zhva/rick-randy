@@ -1,1 +1,1 @@
-(()=>{})();
+(()=>{button.addEventListener("click",function(){});})();

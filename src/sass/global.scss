@@ -1,0 +1,36 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    padding: 10px 32px 10px 35px;
+    height: 55px;
+    border-radius: 30px;
+    color: $black;
+}
+.button-primary {
+    background-color: $primary;
+}
+.button-primary:hover {
+    background-color: $white;
+    border: 2px solid $primary;
+}
+.button-secondary {
+    background-color: $black;
+    color: $white;
+}
+.button-secondary:hover {
+    background-color: $white;
+    border: 2px solid $black;
+    color: $black;
+}
+

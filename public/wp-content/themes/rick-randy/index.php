@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri();?>/css/style.css'>
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>Rick Randy - Web Developer</title>
+    <?php wp_head();?>
 </head>
 <body>
+<?php wp_body_open();?>
     <header class="header-wrapper">
         <div class="logo-wrapper">
             <img src="" alt="" srcset="">
@@ -21,8 +31,8 @@
             </ul>
         </nav>
         <div>
-            <a href="#">Login</a>
-            <a href="#">Sign Up</a>
+            <a href="#" class="button button-primary">Login</a>
+            <a href="#" class="button button-secondary">Sign Up</a>
         </div>
     </header>
     <main class="content-wrapper">
@@ -34,7 +44,7 @@
                     for Web Developers" award for the past 3 years. The final book in this series, "JavaScript -
                     The Apocalypse Is Coming", is coming soon. Get your copy here!
                 </p>
-                <a href="#">Learn More</a>
+                <a href="#" class="button button-primary">Learn More</a>
             </div>
             <div class="hero-image-wrapper">
                 <img src="" alt="" srcset="">
@@ -54,7 +64,7 @@
                             the skills of people. To share my accumulated knowledge, I also write books.
                         </p>
                     </div>
-                    <a href="#">More about me</a>
+                    <a href="#" class="button button-secondary">More about me</a>
                     <div class="quote-wrapper">
                         <blockquote>“Hold my beer, I’m going to learn a new JS Framework”</blockquote>
                     </div>
@@ -65,7 +75,6 @@
             </div>
         </section>
         <section class="section-books">
-        <main class="content-wrapper">
             <div class="book-info info-wrapper">
                 <div>
                     <h1>My true passion - <span>Books</span></h1>
@@ -82,21 +91,25 @@
                     <div>
                         <img src="" alt="" srcset="">
                     </div>
-                    <a href="#">Order now</a>
+                    <a href="#" class="button button-primary">Order now</a>
                 </div>
                 <div>
                     <div>
                         <img src="" alt="" srcset="">
                         <div class="books-hidden">
                             <h3>The Comming of the Web people</h3>
-                            <p></p>
+                            <p>The first book of the series - won over millions of readers. Describes the upcoming
+                                development of the web industry
+                            </p>
                         </div>
                     </div>
                     <div>
                         <img src="" alt="" srcset="">
                         <div class="books-hidden">
                             <h3>Tears of the Web Developer</h3>
-                            <p></p>
+                            <p>The second book of the series -  is the ultimate guide for those who have ever felt
+                                the frustration of trying to debug a line of code
+                            </p>
                         </div>
                     </div>
                     <div>
@@ -118,7 +131,7 @@
                 <p>Website for a company who’s doing private snowboard sessions in Zell am See, Austria. The main
                     goal was to give the website a laidback feeling, like snowboarding.
                 </p>
-                <a href="#">Learn more</a>
+                <a href="#" class="button button-secondary">Learn more</a>
             </div>
             <div>
                 <div>
@@ -137,7 +150,7 @@
                 <input type="text" name="name" placeholder="Full Name">
                 <input type="email" name="email" placeholder="Email Address">
                 <textarea name="message" id="messageId" cols="30" rows="10" placeholder="Write youe message here"></textarea>
-                <a href="#">Send message</a>
+                <a href="#" class="button button-primary">Send message</a>
             </div>
             <div>
                 <div>
@@ -154,6 +167,6 @@
     </main>
     <footer class="footer-wrapper">
     </footer>
-
+    <?php wp_footer();?>
 </body>
 </html>

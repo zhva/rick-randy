@@ -91,4 +91,45 @@ table {
   visibility: visible;
 }
 
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  padding: 10px 32px 10px 35px;
+  height: 55px;
+  border-radius: 30px;
+  color: hsl(0deg, 0%, 0%);
+}
+
+.button-primary {
+  background-color: hsl(43deg, 100%, 50%);
+}
+
+.button-primary:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  border: 2px solid hsl(43deg, 100%, 50%);
+}
+
+.button-secondary {
+  background-color: hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+.button-secondary:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  border: 2px solid hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 0%);
+}
+
 /*# sourceMappingURL=style.css.map */

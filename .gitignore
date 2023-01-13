@@ -39,4 +39,5 @@ package.json
 public/wp-config.php
 public/wp-content/uploads
 .DS_Store
+.vscode/
 
