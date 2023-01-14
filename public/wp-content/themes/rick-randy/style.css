@@ -57,29 +57,29 @@ table {
   font-family: "Abril Fatface";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/abril_fatface/AbrilFatface-Regular.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/abril_fatface/AbrilFatface-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/abril_fatface/AbrilFatface-Regular.woff2") format("woff2"), url("../fonts/abril_fatface/AbrilFatface-Regular.woff") format("woff"), url("../fonts/abril_fatface/AbrilFatface-Regular.ttf") format("truetype"), url("../fonts/abril_fatface/AbrilFatface-Regular.svg#AbrilFatface-Regular") format("svg"); /* Legacy iOS */
+  src: url("../rick-randy/fonts/abril_fatface/AbrilFatface-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../rick-randy/fonts/abril_fatface/AbrilFatface-Regular.eot?#iefix") format("embedded-opentype"), url("../rick-randy/fonts/abril_fatface/AbrilFatface-Regular.woff2") format("woff2"), url("../rick-randy/fonts/abril_fatface/AbrilFatface-Regular.woff") format("woff"), url("../rick-randy/fonts/abril_fatface/AbrilFatface-Regular.ttf") format("truetype"), url("../rick-randy/fonts/abril_fatface/AbrilFatface-Regular.svg#AbrilFatface-Regular") format("svg"); /* Legacy iOS */
 }
 @font-face {
   font-family: "Chiller";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/chiller/Chiller-Regular.eot");
-  src: url("../fonts/chiller/Chiller-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/chiller/Chiller-Regular.woff2") format("woff2"), url("../fonts/chiller/Chiller-Regular.woff") format("woff"), url("../fonts/chiller/Chiller-Regular.ttf") format("truetype"), url("../fonts/chiller/Chiller-Regular.svg#Chiller-Regular") format("svg");
+  src: url("../rick-randy/fonts/chiller/Chiller-Regular.eot");
+  src: url("../rick-randy/fonts/chiller/Chiller-Regular.eot?#iefix") format("embedded-opentype"), url("../rick-randy/fonts/chiller/Chiller-Regular.woff2") format("woff2"), url("../rick-randy/fonts/chiller/Chiller-Regular.woff") format("woff"), url("../rick-randy/fonts/chiller/Chiller-Regular.ttf") format("truetype"), url("../rick-randy/fonts/chiller/Chiller-Regular.svg#Chiller-Regular") format("svg");
 }
 @font-face {
   font-family: "Poppins";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/poppins/Poppins-Regular.eot");
-  src: url("../fonts/poppins/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins/Poppins-Regular.woff2") format("woff2"), url("../fonts/poppins/Poppins-Regular.woff") format("woff"), url("../fonts/poppins/Poppins-Regular.ttf") format("truetype"), url("../fonts/poppins/Poppins-Regular.svg#Poppins-Regular") format("svg");
+  src: url("../rick-randy/fonts/poppins/Poppins-Regular.eot");
+  src: url("../rick-randy/fonts/poppins/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../rick-randy/fonts/poppins/Poppins-Regular.woff2") format("woff2"), url("../rick-randy/fonts/poppins/Poppins-Regular.woff") format("woff"), url("../rick-randy/fonts/poppins/Poppins-Regular.ttf") format("truetype"), url("../rick-randy/fonts/poppins/Poppins-Regular.svg#Poppins-Regular") format("svg");
 }
 @font-face {
   font-family: "Poppins";
   font-weight: 600;
   font-style: normal;
-  src: url("../fonts/poppins/Poppins-SemiBold.eot");
-  src: url("../fonts/poppins/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/poppins/Poppins-SemiBold.woff") format("woff"), url("../fonts/poppins/Poppins-SemiBold.ttf") format("truetype"), url("../fonts/poppins/Poppins-SemiBold.svg#Poppins-SemiBold") format("svg");
+  src: url("../rick-randy/fonts/poppins/Poppins-SemiBold.eot");
+  src: url("../rick-randy/fonts/poppins/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("../rick-randy/fonts/poppins/Poppins-SemiBold.woff2") format("woff2"), url("../rick-randy/fonts/poppins/Poppins-SemiBold.woff") format("woff"), url("../rick-randy/fonts/poppins/Poppins-SemiBold.ttf") format("truetype"), url("../rick-randy/fonts/poppins/Poppins-SemiBold.svg#Poppins-SemiBold") format("svg");
 }
 .hidden {
   display: none;
@@ -163,7 +163,7 @@ section {
 }
 
 .heading-wrapper-braces {
-  background-image: url("../images/brace_left.svg"), url("../images/brace_right.svg");
+  background-image: url("../rick-randy//images/brace_left.svg"), url("../rick-randy//images/brace_right.svg");
   background-position: left top, right top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -338,7 +338,7 @@ nav {
 .section-work .work-cover-img {
   width: 100%;
   height: 70vh;
-  background-image: url(../images/Workshop.webp);
+  background-image: url("../rick-randy/images/Workshop.webp");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -442,7 +442,7 @@ nav {
 .section-contact .contact-info .stamp-wrapper {
   width: 200px;
   height: 120px;
-  background-image: url(../images/Stamp.svg);
+  background-image: url("../rick-randy/images/Stamp.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
