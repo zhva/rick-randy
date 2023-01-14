@@ -331,6 +331,78 @@ section {
   position: absolute;
   margin-top: 50px;
   margin-bottom: 50px;
+  margin-left: 6%;
+}
+
+.section-contact {
+  padding: 80px;
+  background-color: hsla(43deg, 100%, 50%, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+.section-contact .contact-heading {
+  align-self: flex-end;
+  margin-bottom: 80px;
+}
+.section-contact .contact-info-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.section-contact .contact-info-wrapper .form-wrapper {
+  width: 70%;
+}
+.section-contact .contact-info-wrapper form {
+  width: 100%;
+}
+.section-contact .contact-info-wrapper input {
+  border: none;
+  border-bottom: 1px solid hsl(48deg, 5%, 83%);
+  background: transparent;
+  width: 45%;
+  margin-right: 30px;
+}
+.section-contact .contact-info-wrapper input,
+.section-contact .contact-info-wrapper textarea {
+  outline: none;
+  font-size: 18px;
+  margin-bottom: 80px;
+  padding: 10px 20px;
+}
+.section-contact .contact-info-wrapper textarea {
+  display: block;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid hsl(48deg, 5%, 83%);
+  width: calc(90% + 40px);
+}
+.section-contact .contact-info-wrapper input::placeholder,
+.section-contact .contact-info-wrapper textarea::placeholder {
+  color: hsl(0deg, 0%, 0%);
+  font-family: "Poppins";
+  font-size: 18px;
+}
+.section-contact .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.section-contact .contact-info p {
+  text-align: end;
+  margin-bottom: 10px;
+}
+.section-contact .contact-info p:last-of-type {
+  font-weight: 600;
+}
+.section-contact .contact-info .stamp-wrapper {
+  width: 200px;
+  height: 120px;
+  background-image: url(../images/Stamp.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */

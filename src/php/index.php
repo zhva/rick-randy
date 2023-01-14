@@ -145,24 +145,27 @@
             </div>
         </section>
         <section class="section-contact">
-            <div>
-                <h2>Contact<span>Me</span></h2>
-            </div>
-            <div>
-                <input type="text" name="name" placeholder="Full Name">
-                <input type="email" name="email" placeholder="Email Address">
-                <textarea name="message" id="messageId" cols="30" rows="10" placeholder="Write youe message here"></textarea>
-                <a href="#" class="button button-primary">Send message</a>
-            </div>
-            <div>
-                <div>
-                    <p><span>My Cellphone</span> +436641234567</p>
+            <div class="contact-heading"><h2>Contact <span>Me</span></h2></div>
+            <div class="contact-info-wrapper" id="contact-info-wrapper">
+                <div class="form-wrapper">
+                    <form action="" method="post">
+                        <input type="text" name="name" placeholder="Full Name">
+                        <input type="email" name="email" placeholder="Email Address">
+                        <textarea name="message" id="messageId" cols="30" rows="10" placeholder="Write youe message here"></textarea>
+                        <a href="#" class="button button-primary">Send message</a>
+                    </form>
                 </div>
-                <div>
-                    <p><span>My Email</span> rick.randy@rr-studio.com</p>
-                </div>
-                <div class="stamp-wrapper">
-                    <p><span>to:</span>Rick Randy</p>
+                <div class="contact-info" id="contact-info">
+                    <div>
+                        <p>My Cellphone</p>
+                        <p>+436641234567</p>
+                    </div>
+                    <div>
+                        <p>My Email</p>
+                        <p>rick.randy@rr-studio.com</p>
+                    </div>
+                    <div class="stamp-wrapper">
+                    </div>
                 </div>
             </div>
         </section>
@@ -170,5 +173,6 @@
     <footer class="footer-wrapper">
     </footer>
     <?php wp_footer();?>
+    <script src="<?php echo get_template_directory_uri();?>/js/main.js" defer></script>
 </body>
 </html>

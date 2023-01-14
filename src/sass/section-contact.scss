@@ -1,0 +1,72 @@
+.section-contact {
+    padding: 80px;
+    background-color: $bg_primary;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    .contact-heading {
+        align-self: flex-end;
+        margin-bottom: 80px;
+    }
+    .contact-info-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .form-wrapper {
+            width: 70%;
+        }
+        form {
+            width: 100%;
+        }
+        input {
+            border: none;
+            border-bottom: 1px solid $grey;
+            background: transparent;
+            width: 45%;
+            margin-right: 30px;
+        }
+        input,
+        textarea {
+            outline: none;
+            font-size: 18px;
+            margin-bottom: 80px;
+            padding: 10px 20px;
+        }
+        textarea {
+            display: block;
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid $grey;
+            width: calc(90% + 40px);
+
+        }
+        input::placeholder,
+        textarea::placeholder {
+            color: $black;
+            font-family: 'Poppins';
+            font-size: 18px;
+        }
+    }
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        p {
+            text-align: end;
+            margin-bottom: 10px;
+        }
+        p:last-of-type {
+            font-weight: 600;
+        }
+        .stamp-wrapper {
+            width: 200px;
+            height: 120px;
+            background-image: url(../images/Stamp.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
