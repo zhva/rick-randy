@@ -104,7 +104,7 @@ html {
 h2 {
   font-size: 32px;
   text-transform: uppercase;
-  margin: 30px 0;
+  margin-bottom: 30px;
 }
 
 h1 > span,
@@ -132,11 +132,12 @@ section {
 }
 
 .button {
-  padding: 10px 32px 10px 35px;
-  height: 55px;
+  display: inline-block;
+  padding: 14px 32px;
   border-radius: 30px;
   color: hsl(0deg, 0%, 0%);
   font-weight: 600;
+  font-size: 22px;
 }
 
 .button-primary {
@@ -170,7 +171,8 @@ section {
 }
 
 .section-books {
-  padding: 0px 80px;
+  padding: 80px 80px;
+  background-color: hsla(48deg, 5%, 83%, 0.3);
 }
 .section-books h2 {
   text-align: center;
@@ -179,17 +181,26 @@ section {
 .books-content {
   display: flex;
   flex-direction: row;
-  gap: 120px;
-  margin: 70px 0px;
+  gap: 10%;
+  margin-top: 50px;
   padding-left: 35px;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.books-content .book-promo {
+  width: 50vw;
+  margin-top: 35px;
+}
+.books-content .book-promo a.button {
+  margin-left: -35px;
+  margin-top: 50px;
 }
 
 .books-grid-container {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto;
   gap: 50px;
 }
 .books-grid-container .books-grid-item {
@@ -197,7 +208,6 @@ section {
   position: relative;
   height: fit-content;
   width: 100%;
-  overflow: hidden;
 }
 .books-grid-container .books-grid-item img {
   width: 100%;
@@ -205,17 +215,23 @@ section {
 .books-grid-container .books-grid-item:nth-child(3) {
   grid-column: span 2;
 }
+.books-grid-container .books-hidden:hover,
 .books-grid-container .books-grid-item img:hover + .books-hidden,
 .books-grid-container .books-grid-item img:focus + .books-hidden {
   position: absolute;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   top: 0;
   height: 100%;
-  background: linear-gradient(180deg, black, transparent);
+  background: linear-gradient(0deg, hsl(0deg, 0%, 0%), transparent);
   padding: 25px;
   text-align: left;
   width: 100%;
+  overflow: hidden;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.35);
 }
+.books-grid-container .books-hidden:hover h3,
 .books-grid-container .books-grid-item img:hover + .books-hidden h3,
 .books-grid-container .books-grid-item img:focus + .books-hidden h3 {
   text-transform: uppercase;
@@ -225,6 +241,7 @@ section {
   font-size: 24px;
   margin-bottom: 15px;
 }
+.books-grid-container .books-hidden:hover p,
 .books-grid-container .books-grid-item img:hover + .books-hidden p,
 .books-grid-container .books-grid-item img:focus + .books-hidden p {
   color: hsl(0deg, 0%, 100%);
@@ -234,16 +251,17 @@ section {
 
 .block-container {
   position: relative;
-  width: inherit;
+  width: 100%;
   height: fit-content;
-  margin-bottom: 70px;
 }
 .block-container .block {
-  width: inherit;
+  width: 100%;
+  position: relative;
+  z-index: 2;
 }
 .block-container .border {
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   top: -35px;
   left: -35px;
   height: 100%;

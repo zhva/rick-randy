@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="books-content">
-                <div>
+                <div class="book-promo">
                     <div class="block-container">
                         <img class="block" src="<?php echo get_template_directory_uri();?>/images/Book_Apocalypse.webp" alt="Cover of the book Javascript the Apocalypse is coming" srcset="">
                         <div class="border"></div>

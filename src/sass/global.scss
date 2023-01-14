@@ -9,7 +9,7 @@
 h2 {
     font-size: 32px;
     text-transform: uppercase;
-    margin: 30px 0;
+    margin-bottom: 30px;
 }
 h1 > span,
 h2 > span {
@@ -32,11 +32,12 @@ section {
     width: 90%;
 }
 .button {
-    padding: 10px 32px 10px 35px;
-    height: 55px;
+    display: inline-block;
+    padding: 14px 32px;
     border-radius: 30px;
     color: $black;
     font-weight: 600;
+    font-size: 22px;
 }
 .button-primary {
     background-color: $primary;
