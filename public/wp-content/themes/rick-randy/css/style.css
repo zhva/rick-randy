@@ -179,7 +179,6 @@ section {
 }
 
 .quote-wrapper {
-  position: absolute;
   bottom: 0;
   width: 15%;
   text-align: center;
@@ -329,6 +328,7 @@ section {
   left: 35px;
 }
 .section-work div.quote-wrapper {
+  position: absolute;
   margin-top: 50px;
   margin-bottom: 50px;
 }
