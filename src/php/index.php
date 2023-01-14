@@ -127,16 +127,17 @@
         <section class="section-work">
             <div class="work-cover-img">
             </div>
-            <div>
+            <div class="work-wrapper">
                 <h2>My latest<span>Work</span></h2>
                 <p>Website for a company who’s doing private snowboard sessions in Zell am See, Austria. The main
                     goal was to give the website a laidback feeling, like snowboarding.
                 </p>
                 <a href="#" class="button button-secondary">Learn more</a>
             </div>
-            <div>
+            <div class="work-example-wrapper">
                 <div>
-                    <img src="" alt="" srcset="">
+                    <img src="<?php echo get_template_directory_uri();?>/images/Work_example.webp" alt="Puicture of the Rick's latest work" srcset="">
+                    <div class="border"></div>
                 </div>
             </div>
             <div class="quote-wrapper">

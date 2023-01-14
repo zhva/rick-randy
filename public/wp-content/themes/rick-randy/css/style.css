@@ -123,7 +123,7 @@ p {
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 80px;
 }
 
 section {
@@ -168,6 +168,25 @@ section {
   background-repeat: no-repeat;
   background-size: contain;
   padding: 5px 70px 30px 70px;
+}
+
+.border {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  border: 1px solid hsl(0deg, 0%, 0%);
+}
+
+.quote-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 15%;
+  text-align: center;
+  rotate: 12.5deg;
+  font-family: "Chiller";
+  font-size: 26px;
+  color: hsl(210deg, 53%, 14%);
 }
 
 .section-books {
@@ -260,17 +279,58 @@ section {
   z-index: 2;
 }
 .block-container .border {
-  position: absolute;
-  z-index: 1;
   top: -35px;
   left: -35px;
-  height: 100%;
-  width: 100%;
-  border: 1px solid hsl(0deg, 0%, 0%);
 }
 
 .books-hidden {
   display: none;
+}
+
+.section-work {
+  position: relative;
+  width: 100%;
+}
+.section-work div:not(:first-of-type) {
+  margin: 0 5%;
+}
+.section-work .work-cover-img {
+  width: 100%;
+  height: 70vh;
+  background-image: url(../images/Workshop.webp);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-work div.work-wrapper {
+  width: 50%;
+  padding: 50px 80px;
+  position: absolute;
+  margin-top: -100px;
+  background-color: hsl(43deg, 100%, 50%);
+}
+.section-work div.work-wrapper p {
+  margin-bottom: 50px;
+}
+.section-work .work-example-wrapper > div {
+  position: relative;
+  width: 50%;
+  height: fit-content;
+  margin: 8% 35px 35px 0;
+  float: right;
+}
+.section-work .work-example-wrapper > div img {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+.section-work .work-example-wrapper > div .border {
+  top: 35px;
+  left: 35px;
+}
+.section-work div.quote-wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

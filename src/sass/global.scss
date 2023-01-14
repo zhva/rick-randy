@@ -25,7 +25,7 @@ p {
 .content-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 80px;
 }
 section {
     margin: 0 auto;
@@ -64,4 +64,21 @@ section {
     background-repeat: no-repeat;
     background-size: contain;
     padding: 5px 70px 30px 70px;
+}
+.border {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    border: 1px solid $black;
+}
+.quote-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 15%;
+    text-align: center;
+    rotate: 12.5deg;
+    font-family: 'Chiller';
+    font-size: 26px;
+    color: $text-blackquotes;
 }

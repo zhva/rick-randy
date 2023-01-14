@@ -83,13 +83,8 @@
         z-index: 2;
     }
     .border {
-        position: absolute;
-        z-index: 1;
         top: -35px;
         left: -35px;
-        height: 100%;
-        width: 100%;
-        border: 1px solid $black;
     }
 }
 .books-hidden {
