@@ -188,6 +188,48 @@ section {
   color: hsl(210deg, 53%, 14%);
 }
 
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.nav-center a {
+  box-sizing: border-box;
+  margin-right: 30px;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 22px;
+  /* &:active {
+    text-decoration: underline;
+    text-decoration-color: $primary;
+  } */
+}
+.nav-center a:hover {
+  text-decoration: underline;
+  text-decoration-color: hsl(43deg, 100%, 50%);
+}
+
+.nav-left img {
+  width: 70px;
+  height: 70px;
+}
+
+.nav-right a:first-child {
+  margin-right: 10px;
+}
+
+.nav-center,
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
 .section-books {
   padding: 80px 80px;
   background-color: hsla(48deg, 5%, 83%, 0.3);

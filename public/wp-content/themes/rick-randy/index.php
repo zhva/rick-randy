@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri();?>/css/style.css'>
+    <link rel="stylesheet" href='<?php echo get_template_directory_uri();?>/style.css'>
     <link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri();?>/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri();?>/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri();?>/images/favicon-16x16.png">
@@ -21,19 +21,24 @@
         <div class="logo-wrapper">
             <img src="" alt="" srcset="">
         </div>
-        <nav class="nav-wrapper">
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Books</a></li>
-                <li><a href="#">workshops</a></li>
-                <li><a href="#">Consulting</a></li>
-            </ul>
+        <nav>
+            <div class="nav-left">
+                <img src="<?php echo get_template_directory_uri();?>/images/Logo.svg" alt="Logo" />
+            </div>
+            <div class="wrapper">
+            <div class="nav-center">
+                <a href="#">Home</a>
+                <a href="#">About Me</a>
+                <a href="#">Books</a>
+                <a href="#">Workshops</a>
+                <a href="#">Consulting</a>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="button button-primary">Login</a>
+                <a href="#" class="button button-secondary">Sign Up</a>
+            </div>
+            </div>
         </nav>
-        <div>
-            <a href="#" class="button button-primary">Login</a>
-            <a href="#" class="button button-secondary">Sign Up</a>
-        </div>
     </header>
     <main class="content-wrapper">
         <section class="section-hero">
