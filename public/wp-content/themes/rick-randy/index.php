@@ -47,7 +47,7 @@
                             the skills of people. To share my accumulated knowledge, I also write books.
                         </p>
                     </div>
-                    <a href="#" class="button button-secondary">More about me</a>
+                    <a href="<?php echo get_template_directory_uri();?>/about-me.php" class="button button-secondary">More about me</a>
                     <div class="quote-wrapper">
                         <blockquote>“Hold my beer, I’m going to learn a new JS Framework”</blockquote>
                     </div>

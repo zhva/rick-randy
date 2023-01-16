@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 6.1.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-11-13 01:33:21+0000\n"
+"PO-Revision-Date: 2023-01-15 02:34:45+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -682,7 +682,7 @@ msgstr "Home-Link"
 #: wp-includes/blocks/group/block.json
 msgctxt "block description"
 msgid "Gather blocks in a layout container."
-msgstr "Fasse Blöcke in einem Layout-Container zusammen."
+msgstr "Blöcke in einem Layout-Container zusammenfassen."
 
 #: wp-includes/blocks/comments-title/block.json
 msgctxt "block description"
@@ -1085,7 +1085,7 @@ msgstr "Hervorgehoben"
 
 #: wp-includes/script-loader.php:1295
 msgid "Use Site Editor"
-msgstr "Website-Editor benutzen"
+msgstr "Den Website-Editor benutzen"
 
 #. translators: 1: Link to Site Editor documentation on HelpHub, 2: HTML
 #. button.
@@ -1179,7 +1179,7 @@ msgstr "Beitrags-Navigations-Link"
 #: wp-includes/blocks/post-comments-form/block.json
 msgctxt "block description"
 msgid "Display a post's comments form."
-msgstr "Einen Beitrags-Kommentar anzeigen."
+msgstr "Ein Beitrags-Kommentarformular anzeigen."
 
 #: wp-includes/blocks/post-comments-form/block.json
 msgctxt "block title"
@@ -1663,11 +1663,11 @@ msgstr "Navigationsmenü-Archive"
 
 #: wp-includes/post.php:496
 msgid "No Navigation Menu found in Trash."
-msgstr "Kein Navigationsmenü im Papierkorb gefunden."
+msgstr "Es wurde kein Navigationsmenü im Papierkorb gefunden."
 
 #: wp-includes/post.php:495
 msgid "No Navigation Menu found."
-msgstr "Kein Navigationsmenü gefunden."
+msgstr "Es wurde kein Navigationsmenü gefunden."
 
 #: wp-includes/post.php:494
 msgid "Parent Navigation Menu:"
@@ -1993,7 +1993,7 @@ msgstr "Kategorie"
 #: wp-includes/block-template-utils.php:146
 #: wp-includes/js/dist/edit-site.js:14604
 msgid "Displays latest posts written by a single author."
-msgstr "Zeigt die neuesten Beiträge eines ausgewählten Autors an."
+msgstr "Zeigt die neuesten Beiträge eines einzelnen Autors an."
 
 #: wp-includes/block-template-utils.php:145
 msgctxt "Template name"
@@ -2478,7 +2478,7 @@ msgstr "Atom"
 #: wp-includes/blocks/rss/block.json
 msgctxt "block description"
 msgid "Display entries from any RSS or Atom feed."
-msgstr "Einträge von jedem RSS- oder Atom-Feed anzeigen."
+msgstr "Einträge eines beliebigen RSS- oder Atom-Feed anzeigen."
 
 #: wp-includes/blocks/quote/block.json
 msgctxt "block keyword"
@@ -3120,11 +3120,11 @@ msgstr "Widget-Typ unterstützt keine unverarbeiteten Instanzen."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-widgets-controller.php:561
 msgid "Cannot set instance on a widget that does not extend WP_Widget."
-msgstr "Kann keine Instanz auf ein Widget anwenden, das WP_Widget nicht erweitert."
+msgstr "Eine Instanz kann nicht auf ein Widget angewendet werden, das WP_Widget nicht erweitert."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-widgets-controller.php:552
 msgid "The provided widget type (id_base) cannot be updated."
-msgstr "Der angegebene Widget-Typ (id_base) lässt sich nicht aktualisieren."
+msgstr "Der angegebene Widget-Typ (id_base) kann nicht aktualisiert werden."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-widgets-controller.php:544
 msgid "Widget type (id_base) is required."
@@ -3421,7 +3421,7 @@ msgstr "Die Liste der Bereiche, auf die sich die Variation anwenden lässt. Ist 
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-block-types-controller.php:646
 msgid "The initial values for attributes."
-msgstr "Die Anfangswerte für Attribute."
+msgstr "Die urspünglichen Werte für Attribute."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-block-types-controller.php:640
 msgid "Indicates whether the current variation is the default one."
@@ -3453,7 +3453,7 @@ msgstr "Eindeutige Kennung für den Anhang."
 
 #: wp-includes/rest-api.php:1071
 msgid "Cookie check failed"
-msgstr "Cookie-Prüfung fehlgeschlagen"
+msgstr "Cookie-Prüfung ist fehlgeschlagen"
 
 #: wp-includes/class-wp-post-type.php:867
 msgctxt "navigation link block description"
@@ -4518,7 +4518,7 @@ msgstr "Dieses Theme funktioniert nicht mit deiner WordPress-Version."
 #: wp-admin/includes/class-wp-plugins-list-table.php:1310
 #: wp-admin/includes/plugin.php:1136 wp-admin/includes/theme.php:901
 #: wp-admin/includes/theme.php:932 wp-admin/includes/theme.php:978
-#: wp-admin/includes/theme.php:1001 wp-admin/includes/update-core.php:1059
+#: wp-admin/includes/theme.php:1001 wp-admin/includes/update-core.php:1057
 #: wp-admin/includes/update.php:757 wp-admin/includes/update.php:784
 #: wp-admin/install.php:245 wp-admin/theme-install.php:336
 #: wp-admin/theme-install.php:359 wp-admin/theme-install.php:526
@@ -5594,7 +5594,7 @@ msgstr "Ablaufdatum"
 
 #: wp-includes/user.php:3928
 msgid "User&#8217;s location data used for the Community Events in the WordPress Events and News dashboard widget."
-msgstr "Die Standortdaten des Benutzers, die für die Anzeige der Einträge im Dashboard-Widget „WordPress-Veranstaltungen und Neuigkeiten“ verwendet wird."
+msgstr "Die Standortdaten des Benutzers, die für die Anzeige der Einträge im Dashboard-Widget „WordPress-Veranstaltungen und Neuigkeiten“ verwendet werden."
 
 #: wp-includes/user.php:3927
 msgid "Community Events Location"
@@ -6808,7 +6808,7 @@ msgstr "(öffnet in neuem Tab)"
 #. https://www.php.net/manual/datetime.format.php
 #: wp-includes/script-loader.php:440
 msgid "M j, Y g:i a"
-msgstr "j. M Y G:i"
+msgstr "j. M. Y G:i"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-block-renderer-controller.php:214
 msgid "The rendered block."
@@ -7165,7 +7165,7 @@ msgstr "Personenbezogene Daten löschen"
 
 #: wp-includes/comment-template.php:2416
 msgid "Save my name, email, and website in this browser for the next time I comment."
-msgstr "Meinen Namen, meine E-Mail-Adresse und meine Website in diesem Browser speichern, bis ich wieder kommentiere."
+msgstr "Meinen Namen, meine E-Mail-Adresse und meine Website in diesem Browser, für die nächste Kommentierung, speichern."
 
 #: wp-includes/user.php:3815
 msgid "User Description"
@@ -9263,7 +9263,7 @@ msgstr "Du bist leider nicht berechtigt, diesen Kommentar zu löschen."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-menu-items-controller.php:99
 msgid "Sorry, you are not allowed to view menu items."
-msgstr "Du bist leider nicht berechtigt, Menüeinträge anzuzeigen."
+msgstr "Du bist leider nicht berechtigt, Menüeinträge anzusehen."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:175
 msgid "Sorry, you are not allowed to view revisions of this post."
@@ -9704,7 +9704,7 @@ msgstr "Du bist leider nicht berechtigt, diesen Benutzer zu löschen."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:744
 msgid "Username is not editable."
-msgstr "Der Benutzername kann nicht bearbeitet werden."
+msgstr "Der Benutzername ist nicht editierbar."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:679
 msgid "Sorry, you are not allowed to edit roles of this user."
@@ -9907,7 +9907,7 @@ msgstr "Titel für den Beitrag, wie er in der Datenbank vorliegt."
 #: wp-includes/rest-api/endpoints/class-wp-rest-menu-items-controller.php:720
 #: wp-includes/rest-api/endpoints/class-wp-rest-search-controller.php:259
 msgid "The title for the object."
-msgstr "Der Titel für den Beitrag."
+msgstr "Der Titel für das Objekt."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2284
 msgid "A named status for the post."
@@ -9915,7 +9915,7 @@ msgstr "Ein benannter Status für den Beitrag."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:726
 msgid "An alphanumeric identifier for the revision unique to its type."
-msgstr "Eine alphanumerische Kennung für die Ressource, die eindeutig für ihren Typ ist."
+msgstr "Eine alphanumerische Kennung für die Revision, die für ihren Typ eindeutig ist."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:715
 msgid "The date the revision was last modified, as GMT."
@@ -10714,7 +10714,7 @@ msgstr "Falls du ein Video hinzufügst, wird das Bild während des Ladens des Vi
 #: wp-includes/customize/class-wp-customize-themes-section.php:142
 #: wp-includes/customize/class-wp-customize-themes-section.php:143
 msgid "Search themes&hellip;"
-msgstr "Suche Themes &hellip;"
+msgstr "Themes suchen &hellip;"
 
 #. translators: %s: Theme name.
 #: wp-includes/class-wp-customize-manager.php:4925
@@ -10970,7 +10970,7 @@ msgstr "Vorschau des Bereichs &#8222;Bilder zuschneiden&#8220;. Erfordert Maus-I
 #. translators: %s: Documentation URL.
 #: wp-includes/formatting.php:4952
 msgid "A structure tag is required when using custom permalinks. <a href=\"%s\">Learn more</a>"
-msgstr "Um individuelle Permalinks benutzen zu können, ist ein Struktur-Schlagwort erforderlich. <a href=\"%s\">Erfahre mehr (engl.)</a>"
+msgstr "Um individuelle Permalinks benutzen zu können, ist ein Struktur-Schlagwort erforderlich. <a href=\"%s\">Weitere Informationen (engl.)</a>"
 
 #: wp-includes/class-wp-xmlrpc-server.php:4362
 #: wp-includes/class-wp-xmlrpc-server.php:4415
@@ -13356,7 +13356,7 @@ msgstr "Automatisch"
 
 #: wp-includes/media.php:4657
 msgid "Cropping&hellip;"
-msgstr "Zuschneiden &hellip;"
+msgstr "Wird zugeschnitten &hellip;"
 
 #: wp-includes/media-template.php:1428 wp-includes/media-template.php:1444
 #: wp-includes/widgets/class-wp-widget-media-video.php:87
@@ -16663,7 +16663,7 @@ msgstr "E-Mail-Adresse:"
 
 #: wp-signup.php:280
 msgid "(Must be at least 4 characters, lowercase letters and numbers only.)"
-msgstr "(Bitte mindestens 4 Zeichen, nur Kleinbuchstaben und Zahlen.)"
+msgstr "(Es müssen mindestens 4 Zeichen sein, bitte nur Kleinbuchstaben und Zahlen.)"
 
 #: wp-signup.php:212
 msgid "Privacy:"
@@ -16734,11 +16734,11 @@ msgstr "[%s] Passwort zurücksetzen"
 
 #: wp-includes/user.php:2887
 msgid "Password reset is not allowed for this user"
-msgstr "Diesem Benutzer ist es nicht erlaubt, das Passwort zurückzusetzen"
+msgstr "Es nicht erlaubt, das Passwort dieses Benutzers zurückzusetzen"
 
 #: wp-includes/user.php:3044
 msgid "<strong>Error:</strong> Please enter a username or email address."
-msgstr "<strong>Fehler:</strong> Bitte gib einen Benutzernamen oder eine E-Mail-Adresse ein."
+msgstr "<strong>Fehler:</strong> Bitte einen Benutzernamen oder eine E-Mail-Adresse angeben."
 
 #: wp-login.php:152
 msgid "Powered by WordPress"
@@ -16814,7 +16814,7 @@ msgstr "in den Papierkorb gelegt."
 
 #: wp-includes/script-loader.php:962
 msgid "Crunching&hellip;"
-msgstr "Verarbeiten &hellip;"
+msgstr "Wird verarbeitet &hellip;"
 
 #: wp-includes/script-loader.php:960
 msgid "Upload stopped."
@@ -16914,7 +16914,7 @@ msgstr "AIM"
 
 #: wp-includes/user.php:2106
 msgid "Cannot create a user with an empty login name."
-msgstr "Kann keinen Benutzer mit leerem Anmeldnamen anlegen."
+msgstr "Es kann kein neuer Benutzer anlegt werden, wenn der Anmeldename leer ist."
 
 #: wp-includes/revision.php:331
 msgid "Cannot create a revision of a revision"
