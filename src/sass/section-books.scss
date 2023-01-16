@@ -36,6 +36,7 @@
         width: 100%;
         img {
             width: 100%;
+            height: auto;
         }
     }
     .books-grid-item:nth-child(3) {
@@ -77,8 +78,9 @@
     width: 100%;
     height: fit-content;
 
-    .block {
+    img {
         width: 100%;
+        height: auto;
         position: relative;
         z-index: 2;
     }

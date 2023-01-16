@@ -276,6 +276,7 @@ nav {
 }
 .books-grid-container .books-grid-item img {
   width: 100%;
+  height: auto;
 }
 .books-grid-container .books-grid-item:nth-child(3) {
   grid-column: span 2;
@@ -319,8 +320,9 @@ nav {
   width: 100%;
   height: fit-content;
 }
-.block-container .block {
+.block-container img {
   width: 100%;
+  height: auto;
   position: relative;
   z-index: 2;
 }
@@ -368,6 +370,7 @@ nav {
 .section-work .work-example-wrapper > div img {
   position: relative;
   width: 100%;
+  height: auto;
   z-index: 2;
 }
 .section-work .work-example-wrapper > div .border {

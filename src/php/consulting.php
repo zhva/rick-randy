@@ -59,5 +59,5 @@ Template Name: Consulting Template
             </div>
         </div>
     </main>
-    <?php get_footer('custom'); ?>
+    <?php get_footer(); ?>
 

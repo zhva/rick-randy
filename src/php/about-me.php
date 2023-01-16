@@ -61,5 +61,5 @@ Template Name: About Me Template
             </div>
         </div>
     </main>
-    <?php get_footer('custom'); ?>
+    <?php get_footer(); ?>
 
