@@ -32,7 +32,7 @@ Template Name: About Me Template
                             ago, I build up my YouTube channel, which has now over 150.000 subscribers.
                         </p>
                     </div>
-                    <a href="#" class="button button-secondary">My yotube</a>
+                    <a href="#" class="button button-secondary">My YouTube</a>
                 </div>
             </div>
             <div class="grid-elem">
@@ -56,12 +56,13 @@ Template Name: About Me Template
                             developer while offering workshops and doing consulting.
                         </p>
                     </div>
-                    <a href="#" class="buton button-secondary">My Linkedin</a>
+                    <a href="#" class="buton button-secondary">My LinkedIn</a>
                 </div>
             </div>
         </div>
     </main>
     <footer class="footer-wrapper">
     </footer>
+    <?php wp_footer();?>
 </body>
 </html>

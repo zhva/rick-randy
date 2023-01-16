@@ -22,8 +22,8 @@ Template Name: Consulting Template
                     <p><span>$</span>0</p>
                     <p>Free includes</p>
                     <ul>
-                        <li></li>
-                        <li></li>
+                        <li>Review for one application of your choice</li>
+                        <li>30 minute video call where you can ask me anything</li>
                     </ul>
                     <a href="#" class="button button-primary">Request</a>
                 </div>
@@ -37,10 +37,10 @@ Template Name: Consulting Template
                     <p><span>$</span>400</p>
                     <p>Premium includes</p>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Review for application(s) of your choice</li>
+                        <li>Video call where you can ask me anything</li>
+                        <li>Consulting for your web development project </li>
+                        <li>SEO and Google Analytics consulting</li>
                     </ul>
                     <a href="#" class="button button-primary">Request</a>
                 </div>
@@ -51,8 +51,8 @@ Template Name: Consulting Template
                     <p>Design a custom package for your business needs</p>
                     <p>Custom includes</p>
                     <ul>
-                        <li></li>
-                        <li></li>
+                        <li>Write a request with any service you require (pricing may vary)</li>
+                        <li>Video call where you can ask me anything</li>
                     </ul>
                     <a href="#" class="button button-primary">Request</a>
                 </div>
@@ -61,5 +61,6 @@ Template Name: Consulting Template
     </main>
     <footer class="footer-wrapper">
     </footer>
+    <?php wp_footer();?>
 </body>
 </html>
