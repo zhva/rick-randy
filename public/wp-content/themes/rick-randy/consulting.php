@@ -1,38 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri();?>/css/style.css'>
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <title>Rick Randy - Consulting</title>
-</head>
-<body>
-    <header class="header-wrapper">
-        <div class="logo-wrapper">
-            <img src="" alt="" srcset="">
-        </div>
-        <nav class="nav-wrapper">
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Books</a></li>
-                <li><a href="#">workshops</a></li>
-                <li><a href="#">Consulting</a></li>
-            </ul>
-        </nav>
-        <div>
-            <a href="#" class="button button-primary">Login</a>
-            <a href="#" class="button button-secondary">Sign Up</a>
-        </div>
-    </header>
+<?php
+/*
+Template Name: Consulting Template
+ */
+ ?>
+<?php wp_body_open();?>
+    <?php get_header(); ?>
     <main class="content-wrapper">
         <div class="consulting-info info-wrapper">
             <div>

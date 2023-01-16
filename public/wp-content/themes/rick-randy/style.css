@@ -99,6 +99,7 @@ html {
   font-size: 18px;
   font-family: "Poppins";
   font-weight: normal;
+  scroll-behavior: smooth;
 }
 
 h2 {
@@ -198,6 +199,10 @@ nav {
 
 .wrapper {
   display: flex;
+}
+
+.nav-center ul li {
+  display: inline-block;
 }
 
 .nav-center a {

@@ -39,4 +39,11 @@ add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mime
   }
 
   add_action( 'admin_head', 'fix_svg' );
+
+  register_nav_menus( array(
+    'NavBar' => __( 'NavBar'),
+    'footer' => __( 'Footer Menu'),
+) );
+
+add_action( 'init', 'register_nav_menus' );
 ?>

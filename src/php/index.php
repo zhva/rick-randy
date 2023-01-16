@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri();?>/style.css'>
-    <link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri();?>/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri();?>/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri();?>/images/favicon-16x16.png">
-    <link rel="manifest" href="<?php echo get_template_directory_uri();?>/images/site.webmanifest">
-    <link rel="mask-icon" href="<?php echo get_template_directory_uri();?>/images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <title>Rick Randy - Web Developer</title>
-    <?php wp_head();?>
-</head>
-<body>
 <?php wp_body_open();?>
     <?php get_header(); ?>
     <main class="content-wrapper">
@@ -57,7 +39,7 @@
                 <img src="" alt="" srcset="">
             </div>
         </section>
-        <section class="section-books">
+        <section class="section-books" id="Books">
             <div class="book-info info-wrapper">
                 <div class="heading-wrapper-braces">
                     <h2>My true passion - <span>Books</span></h2>
@@ -107,7 +89,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-work">
+        <section class="section-work" id="Workshops">
             <div class="work-cover-img">
             </div>
             <div class="work-wrapper">
