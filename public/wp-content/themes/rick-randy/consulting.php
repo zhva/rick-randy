@@ -59,8 +59,5 @@ Template Name: Consulting Template
             </div>
         </div>
     </main>
-    <footer class="footer-wrapper">
-    </footer>
-    <?php wp_footer();?>
-</body>
-</html>
+    <?php get_footer('custom'); ?>
+

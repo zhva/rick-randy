@@ -135,9 +135,4 @@
             </div>
         </section>
     </main>
-    <footer class="footer-wrapper">
-    </footer>
-    <?php wp_footer();?>
-    <script src="<?php echo get_template_directory_uri();?>/js/main.js" defer></script>
-</body>
-</html>
+    <?php get_footer('custom'); ?>
