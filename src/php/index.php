@@ -124,15 +124,13 @@
               while ($contact -> have_posts()) :
                 $contact -> the_post();
         ?>
-            <div class="contact-heading"><?php  the_title(); ?></h2></div>
+            <div class="contact-heading"><h2><?php  the_title(); ?></h2></div>
             <div class="contact-info-wrapper" id="contact-info-wrapper">
                 <div class="form-wrapper">
-                    <form action="" method="post">
-                        <input type="text" name="name" placeholder="Full Name">
-                        <input type="email" name="email" placeholder="Email Address">
-                        <textarea name="message" id="messageId" cols="30" rows="10" placeholder="Write your message here"></textarea>
-                        <a href="#" class="button button-primary"><?php echo get_post_custom_values("btn-text")[0]; ?></a>
-                    </form>
+                    <?php
+                        $form7 = wpcf7_contact_form(103);
+                        echo $form7->form;
+                    ?>
                 </div>
                 <div class="contact-info" id="contact-info">
                     <div>
