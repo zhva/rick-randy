@@ -7,19 +7,19 @@ Template Name: About Me Template
     <?php get_header(); ?>
     <main class="content-wrapper">
         <div class="heading">
-            <h1>About <span>me</span></h1>
+            <h2>About <span>me</span></h2>
         </div>
         <div class="content-grid">
             <div class="grid-elem">
-                <img src="" alt="" srcset="">
+                <img src="<?php echo get_template_directory_uri();?>/images/Photo-who-am-i.webp" alt="Picture of Rick sitting in front of his laptop" srcset="">
             </div>
             <div class="grid-elem">
-                <div>
-                    <h2>Who<span>am I</span></h2>
+                <div class="grid-elem-top">
+                    <h3>Who<span> am I</span></h3>
                     <div>
                         <p>
-                            It all starts with a “Hello World”! Or for me it was a book about HTML I found in my local
-                            library when I was 15. Since then, my whole life has been dedicated to coding. I went to
+                            It all starts with a “Hello World”! <br> Or for me it was a book about HTML I found in my local
+                            library when I was 15. <br>Since then, my whole life has been dedicated to coding. I went to
                             university and finished my Bachelor degree.
                         </p>
                         <p>
@@ -31,16 +31,15 @@ Template Name: About Me Template
                             Five years ago, I started my book-series “Why you rightfully hate JavaScript”. Two years
                             ago, I build up my YouTube channel, which has now over 150.000 subscribers.
                         </p>
+                        <br>
+                        <br>
                     </div>
                     <a href="#" class="button button-secondary">My YouTube</a>
                 </div>
             </div>
             <div class="grid-elem">
-                <img src="" alt="" srcset="">
-            </div>
-            <div class="grid-elem">
-                <div>
-                    <h2>Work<span>experience</span></h2>
+                <div class="grid-elem-bottom">
+                    <h3>Work<span> experience</span></h3>
                     <div>
                         <p>Over the last years of me working in this business I’ve worked with many companies from
                             all over the world, like AP MEDIA in Hamburg, Utility in New York or Blink22 in Singapore.
@@ -54,12 +53,17 @@ Template Name: About Me Template
                             I’m in the web development business
                             for over 10 years now and a certified trainer for the past three years. Today I’m a senior web
                             developer while offering workshops and doing consulting.
-                        </p>
+                         </p>
+                        <br>
+                        <br>
                     </div>
-                    <a href="#" class="buton button-secondary">My LinkedIn</a>
+                    <a href="#" class="button button-secondary">My LinkedIn</a>
                 </div>
             </div>
-        </div>
+            <div class="grid-elem">
+                <img src="<?php echo get_template_directory_uri();?>/images/Photo-work-experience.webp" alt="Picture of three people sitting at a desk coding" srcset="">
+            </div>
+        
     </main>
     <?php get_footer(); ?>
 

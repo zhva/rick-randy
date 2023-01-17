@@ -131,12 +131,6 @@
                         $form7 = wpcf7_contact_form(103);
                         echo $form7->form;
                     ?>
-                    <!-- <form action="" method="post">
-                        <input type="text" name="name" placeholder="Full Name">
-                        <input type="email" name="email" placeholder="Email Address">
-                        <textarea name="message" id="messageId" cols="30" rows="10" placeholder="Write your message here"></textarea>
-                        <a href="#" class="button button-primary"><?php // echo get_post_custom_values("btn-text")[0]; ?></a>
-                    </form> -->
                 </div>
                 <div class="contact-info" id="contact-info">
                     <div>

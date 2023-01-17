@@ -108,8 +108,15 @@ h2 {
   margin-bottom: 30px;
 }
 
+h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
 h1 > span,
-h2 > span {
+h2 > span,
+h3 > span {
   font-weight: 600;
 }
 
@@ -149,6 +156,7 @@ section {
 .button-primary:hover {
   background-color: hsl(0deg, 0%, 100%);
   border: 2px solid hsl(43deg, 100%, 50%);
+  cursor: pointer;
 }
 
 .button-secondary {
@@ -161,6 +169,7 @@ section {
   background-color: hsl(0deg, 0%, 100%);
   border: 2px solid hsl(0deg, 0%, 0%);
   color: hsl(0deg, 0%, 0%);
+  cursor: pointer;
 }
 
 .heading-wrapper-braces {
@@ -453,6 +462,73 @@ nav {
   background-image: url("../rick-randy/images/Stamp.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.heading h2 {
+  text-align: center;
+}
+
+.content-wrapper .content-grid {
+  display: grid;
+  grid-template-columns: 580px 580px;
+  justify-content: center;
+  align-items: center;
+}
+.content-wrapper .content-grid .grid-elem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-wrapper .content-grid .grid-elem-top {
+  width: 580px;
+  height: 671px;
+  padding: 40px 40px;
+  background-color: hsla(48deg, 5%, 83%, 0.3);
+  text-align: left;
+}
+.content-wrapper .content-grid .grid-elem-bottom {
+  width: 580px;
+  height: 671px;
+  padding: 40px 40px;
+  background-color: hsla(43deg, 100%, 50%, 0.1);
+  text-align: right;
+}
+
+.content-wrapper .info-wrapper {
+  text-align: center;
+  background-image: url("../rick-randy//images/brace_left.svg"), url("../rick-randy//images/brace_right.svg");
+  background-position: left top, right top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 5px 5px 5px 5px;
+}
+.content-wrapper .cards {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  align-items: center;
+}
+.content-wrapper .cards .card-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 701px;
+  background-color: hsla(48deg, 5%, 83%, 0.3);
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 2px hsl(48deg, 5%, 83%);
+  padding: 40px 40px;
+}
+.content-wrapper .cards .card-header {
+  background-color: hsl(43deg, 100%, 50%);
+}
+.content-wrapper .cards h2 {
+  text-transform: none;
+  font-weight: semibold;
+}
+.content-wrapper .cards p {
+  text-transform: uppercase;
+  font-weight: semibold;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,14 +8,14 @@ Template Name: Consulting Template
     <main class="content-wrapper">
         <div class="consulting-info info-wrapper">
             <div>
-                <h1>Your <span>wish</span> is my <span>command</span></h1>
-                <p>Over the past years I gained a lot of expertise in my department and customer service.
+                <h2>Your <span>wish</span> is my <span>command</span></h2>
+                <p>Over the past years I gained a lot of expertise in my department and customer service.<br>
                     I want to share this knowledge with every web developer who is willing to learn and get
-                    better in their field. You can either book the free package or full premium package.
+                    better in their field. <br>You can either book the free package or full premium package.
                     You can also customize a package for you business needs.</p>
             </div>
         </div>
-        <div>
+        <div class="cards">
             <div class="card-wrapper">
                 <div>
                     <h2>Free</h2>
@@ -33,7 +33,7 @@ Template Name: Consulting Template
                     <p>Most popular</p>
                 </div>
                 <div>
-                    <h2>Premimum</h2>
+                    <h2>Premium</h2>
                     <p><span>$</span>400</p>
                     <p>Premium includes</p>
                     <ul>

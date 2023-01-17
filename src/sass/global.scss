@@ -12,8 +12,16 @@ h2 {
     text-transform: uppercase;
     margin-bottom: 30px;
 }
+
+h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
 h1 > span,
-h2 > span {
+h2 > span,
+h3 > span {
     font-weight: 600;
 }
 
@@ -47,6 +55,7 @@ section {
 .button-primary:hover {
     background-color: $white;
     border: 2px solid $primary;
+    cursor: pointer;
 }
 .button-secondary {
     background-color: $black;
@@ -57,6 +66,7 @@ section {
     background-color: $white;
     border: 2px solid $black;
     color: $black;
+    cursor: pointer;
 }
 
 .heading-wrapper-braces {

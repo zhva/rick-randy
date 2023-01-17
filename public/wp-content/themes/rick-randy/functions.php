@@ -45,5 +45,6 @@ add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mime
     'footer' => __( 'Footer Menu'),
 ) );
 
-add_action( 'init', 'register_nav_menus' );
+// Folgende Zeile muss ich (Katharina) für meinen Mac auskommentieren sonst Fehlermeldung!!
+//add_action( 'init', 'register_nav_menus' );
 ?>

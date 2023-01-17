@@ -1,0 +1,33 @@
+.heading {
+    h2 {
+        text-align:center;
+    }
+}
+
+.content-wrapper {
+    .content-grid {
+        display:grid;
+        grid-template-columns: 580px 580px;
+        justify-content: center;
+        align-items:center;
+        .grid-elem {
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        .grid-elem-top {
+            width: 580px;
+            height: 671px;
+            padding: 40px 40px;
+            background-color: $bg-grey;
+            text-align: left;
+        }
+        .grid-elem-bottom {
+            width: 580px;
+            height: 671px;
+            padding: 40px 40px;
+            background-color: $bg_primary;
+            text-align: right;
+        }
+    }
+}

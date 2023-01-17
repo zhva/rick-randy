@@ -1,0 +1,40 @@
+.content-wrapper {
+    .info-wrapper {
+        text-align: center;
+        background-image: url('../rick-randy//images/brace_left.svg'), url('../rick-randy//images/brace_right.svg');
+        background-position: left top, right top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 5px 5px 5px 5px;
+    }
+    .cards {
+        display:grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: auto auto auto;
+        justify-content: center;
+        align-items:center;
+        .card-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 300px;
+            height: 701px;
+            background-color: $bg-grey;
+            border-radius:15px;
+            box-shadow: 2px 2px 2px 2px $grey;
+            padding: 40px 40px;
+        }
+        .card-header {
+            background-color: $primary;
+        }
+        h2 {
+            text-transform: none;
+            font-weight: semibold;
+        }
+        p {
+            text-transform: uppercase;
+            font-weight: semibold;
+        }
+        
+    }
+    
+}
