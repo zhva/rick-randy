@@ -899,49 +899,63 @@ nav {
 }
 .content-wrapper .cards .card-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
   background-color: hsla(48deg, 5%, 83%, 0.3);
   border-radius: 15px;
-  box-shadow: -3px -3px 3px hsl(48deg, 5%, 83%), 3px 3px 3px hsl(48deg, 5%, 83%);
+  box-shadow: 0 0 11px hsl(48deg, 5%, 83%);
   padding: 40px 40px;
 }
+.content-wrapper .cards .card-wrapper:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 .content-wrapper .cards .card-header {
-  justify-content: first baseline;
   background-color: hsl(43deg, 100%, 50%);
   font-weight: 600;
   border-radius: 15px 15px 0 0;
-  box-shadow: -3px -3px 3px hsl(48deg, 5%, 83%), 3px 3px 3px hsl(48deg, 5%, 83%);
-  width: 100%;
-  height: 10%;
-  padding: 20px 80px;
+  box-shadow: 0 0 11px hsl(48deg, 5%, 83%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22.2%;
+  height: 5%;
+  position: absolute;
+  top: 38%;
+  left: 38.9%;
 }
 .content-wrapper .cards .card-body {
   justify-content: center;
+  padding: 30px;
 }
-.content-wrapper .cards h2 {
+.content-wrapper .cards .card-body h2 {
   text-align: center;
   text-transform: none;
 }
-.content-wrapper .cards .card-money {
+.content-wrapper .cards .card-body .card-money {
   font-size: 72px;
   padding: 30px;
   font-weight: 600;
   text-align: center;
 }
-.content-wrapper .cards .card-money > span {
+.content-wrapper .cards .card-body .card-money span {
   font-size: 18px;
 }
-.content-wrapper .cards .card-custom {
+.content-wrapper .cards .card-body .card-custom {
   text-align: center;
+  padding: 18px;
 }
-.content-wrapper .cards .card-heading {
+.content-wrapper .cards .card-body .card-heading {
   text-transform: uppercase;
   font-weight: 600;
 }
-.content-wrapper .cards ul {
+.content-wrapper .cards .card-body li {
   list-style-image: url("../rick-randy//images/bullet_character.svg");
+}
+.content-wrapper .cards .button {
+  align-self: center;
 }
 
 .container {
