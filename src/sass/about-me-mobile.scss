@@ -1,0 +1,27 @@
+@media (max-width: 1280px) {
+    .content-wrapper {
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-items:center;
+            row-gap: 20px;
+            
+            .grid-elem:nth-of-type(1) {
+                order: 1;
+            }
+            .grid-elem:nth-of-type(2) {
+                order: 2;
+            }
+            .grid-elem:nth-of-type(3) {
+                order: 3;
+            }
+            .grid-elem:nth-of-type(4) {
+                order: 4;
+            }
+            .grid-elem:nth-of-type(4) .grid-item {
+                text-align: left;
+            }            
+        }
+    }
+}
