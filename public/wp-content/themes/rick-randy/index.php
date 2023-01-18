@@ -2,41 +2,49 @@
     <?php get_header(); ?>
     <main class="content-wrapper">
         <section class="section-hero">
-            <div class="hero-content-wrapper">
-                <span>Rick Randy</span>
-                <h1>Why you rightfully <span>hate</span>JavaScript</h1>
-                <p>The most loved book series in the web community in 2021. The series has won the "Best Book
-                    for Web Developers" award for the past 3 years. The final book in this series, "JavaScript -
-                    The Apocalypse Is Coming", is coming soon. Get your copy here!
-                </p>
-                <a href="#" class="button button-primary">Learn More</a>
-            </div>
-            <div class="hero-image-wrapper">
-                <img src="" alt="" srcset="">
+            <div class="hero-grid">
+                <div>
+                    <div class="hero-name">Rick Randy</div>
+                    <h1 class="hero-title">
+                        <span>Why you </span>
+                        <span>rightfully </span>
+                        <span>hate </span>
+                        <span>JavaScript</span>
+                    </h1>
+                    <p>The most loved book series in the web community in 2021. The series has won the "Best Book for Web Developers" award for the past 3 years. The final book in this series, "JavaScript - The Apocalypse Is Coming", is coming soon. Get your copy here!</p>
+                    <button class="button button-primary">Learn more</button>
+                </div>
+                <div>
+                    <img src="<?php echo get_template_directory_uri();?>/images/Book.webp" alt="" />
+                </div>
             </div>
         </section>
         <section class="section-about">
-            <div>
-                <div>
-                    <h2 class="about-content-wrapper">Hi I'm <span>Rick Randy</span></h2>
-                    <div>
-                        <p>I work as web developer and trainer. I can help you to build web products or improve your
-                            existing applications. I’m available for freelance projects or specific knowledge trainings
-                            and workshops. Feel free to contact me with your requirements.
-                        </p>
-                        <p>More than 10 years of experience working with companies from all over the world. I design
-                            and develop web applications for business and personal use, and provide training to improve
-                            the skills of people. To share my accumulated knowledge, I also write books.
-                        </p>
+            <div class="about-grid">
+                <div class="column">
+                    <img src="<?php echo get_template_directory_uri();?>/images/Ricks-photo.webp" alt="" />
+                </div>
+                <div class="column about-me">
+                    <div class="dot dot-main">
+                        <img width="40" height="40" src="<?php echo get_template_directory_uri();?>/images/Separator.svg" alt="" />
                     </div>
-                    <a href="<?php echo get_template_directory_uri();?>/about-me.php" class="button button-secondary">More about me</a>
-                    <div class="quote-wrapper">
-                        <blockquote>“Hold my beer, I’m going to learn a new JS Framework”</blockquote>
+                    <h1 class="">Hi, I'm <span>Rick Randy</span></h1>
+                    <p>I work as web developer and trainer. I can help you to build web products or improve your
+                        existing applications. I’m available for freelance projects or specific knowledge trainings
+                        and workshops. Feel free to contact me with your requirements.
+                    </p>
+                    <p>More than 10 years of experience working with companies from all over the world. I design and
+                        develop web applications for business and personal use, and provide training to improve the
+                        skills of people. To share my accumulated knowledge, I also write books.
+                    </p>
+                    <button class="button button-secondary">More about me</button>
+                    <div class="about-me-joke">
+                        <div class="dot dot-joke">
+                            <img width="40" height="40" src="<?php echo get_template_directory_uri();?>/images/Separator.svg" alt="" />
+                        </div>
+                        <span>“Hold my beer, I’m going to learn a new JS Framework"</span>
                     </div>
                 </div>
-            </div>
-            <div class="about-image-wrapper">
-                <img src="" alt="" srcset="">
             </div>
         </section>
         <section class="section-books" id="Books">

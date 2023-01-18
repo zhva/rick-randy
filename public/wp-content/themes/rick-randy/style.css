@@ -177,7 +177,6 @@ section {
 }
 
 .heading-wrapper-braces {
-  background-image: url("../rick-randy//images/brace_left.svg"), url("../rick-randy//images/brace_right.svg");
   background-position: left top, right top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -202,6 +201,14 @@ section {
   color: hsl(210deg, 53%, 14%);
 }
 
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -212,6 +219,7 @@ nav {
 
 .wrapper {
   display: flex;
+  align-items: center;
 }
 
 .nav-center ul li {
@@ -231,6 +239,8 @@ nav {
 .nav-center a:hover {
   text-decoration: underline;
   text-decoration-color: hsl(43deg, 100%, 50%);
+  text-underline-offset: 6px;
+  text-decoration-thickness: 3px;
 }
 
 .nav-left img {
@@ -248,6 +258,343 @@ nav {
   align-items: center;
 }
 
+@media (max-width: 1280px) {
+  .nav-center,
+  .nav-right {
+    display: none;
+  }
+  .hamburger {
+    width: 40px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 9999;
+  }
+  .hamburger .line {
+    height: 7px;
+    border-radius: 9999px;
+  }
+  .hamburger .line:last-child {
+    background-color: hsl(43deg, 100%, 50%);
+  }
+  .hamburger .line:not(:last-child) {
+    margin-bottom: 5px;
+    background-color: hsl(0deg, 0%, 0%);
+  }
+  .mobile-menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: hsl(0deg, 0%, 100%);
+    width: 350px;
+    padding: 20px;
+    box-shadow: -10px 0px 35px 0px rgba(0, 0, 0, 0.25);
+  }
+  .mobile-menu .top-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .mobile-menu .logo {
+    margin-right: 10px;
+  }
+  .mobile-menu .close {
+    margin-left: auto;
+  }
+  .mobile-menu .close .line {
+    height: 7px;
+    width: 40px;
+    border-radius: 9999px;
+  }
+  .mobile-menu .close .line:first-child {
+    background-color: hsl(0deg, 0%, 0%);
+    rotate: 45deg;
+  }
+  .mobile-menu .close .line:last-child {
+    background-color: hsl(43deg, 100%, 50%);
+    rotate: -45deg;
+    margin-top: -7px;
+  }
+  .mobile-menu .menu-content {
+    flex: 1;
+  }
+  .mobile-menu .menu-content .title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .mobile-menu .menu-content ul {
+    margin-left: 20px;
+  }
+  .mobile-menu .menu-content ul li a {
+    display: inline-block;
+    font-size: 18px;
+    color: hsl(0deg, 0%, 0%);
+    margin-bottom: 20px;
+  }
+  .mobile-menu .menu-content ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: hsl(43deg, 100%, 50%);
+    text-underline-offset: 6px;
+    text-decoration-thickness: 3px;
+  }
+  .mobile-menu .menu-joke {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    rotate: -12deg;
+    margin-bottom: 20px;
+  }
+  .mobile-menu .menu-joke span {
+    font-family: "Chiller";
+    font-size: 22px;
+    width: 235px;
+  }
+}
+@media (min-width: 1281px) {
+  .hamburger {
+    display: none;
+  }
+}
+.container {
+  margin: 0 auto;
+}
+
+.hero-grid {
+  display: flex;
+  gap: 80px;
+  padding-top: 50px;
+}
+
+.hero-grid div:last-child {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.hero-name {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  margin-bottom: 20px;
+}
+
+.hero-title span {
+  font-family: "Abril Fatface";
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: none;
+}
+
+.hero-title span:nth-child(3) {
+  color: hsl(43deg, 100%, 50%);
+}
+
+.hero-grid p {
+  line-height: 28px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 780px) {
+  .container {
+    width: 90%;
+  }
+  .hero-grid {
+    flex-direction: column;
+  }
+  .hero-grid div:last-child {
+    display: none;
+  }
+  .hero-title span {
+    font-size: 40px;
+  }
+}
+@media (min-width: 781px) {
+  .container {
+    width: 80%;
+  }
+}
+@media (min-width: 780px) and (max-width: 1279px) {
+  .hero-grid {
+    flex-direction: row;
+    gap: 80px;
+  }
+  .hero-title span {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .hero-title span:nth-child(3) {
+    text-indent: 180px;
+    font-size: 70px;
+  }
+  .hero-grid div:last-child {
+    max-width: 50%;
+    height: 100%;
+  }
+  .hero-grid div:last-child img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1920px;
+  }
+  .hero-title span {
+    font-size: 100px;
+    line-height: 130px;
+    display: block;
+  }
+  .hero-title span:nth-child(3) {
+    text-indent: 210px;
+    font-size: 160px;
+  }
+  .hero-grid div:last-child {
+    max-width: 50%;
+  }
+  .hero-grid div:last-child img {
+    height: 100%;
+  }
+}
+.container {
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: flex;
+}
+
+.about-grid .column:first-child {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.about-grid .about-me {
+  flex: 1;
+  background-color: hsla(43deg, 100%, 50%, 0.1);
+}
+
+.about-grid .column:first-child img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-me {
+  position: relative;
+}
+
+.about-me h1,
+.about-me p {
+  margin-bottom: 40px;
+}
+
+.about-me h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.about-me .dot {
+  background-color: hsl(43deg, 100%, 50%);
+  border-radius: 9999px;
+  display: grid;
+  place-items: center;
+}
+
+.about-me .dot-joke {
+  position: absolute;
+}
+
+.about-me-joke {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+}
+
+.about-me-joke span {
+  width: 220px;
+  font-family: "Chiller";
+  font-size: 28px;
+  text-align: center;
+  display: block;
+  rotate: -12.5deg;
+  margin-top: 10%;
+}
+
+@media (max-width: 780px) {
+  .about-me {
+    padding: 60px;
+  }
+}
+@media (max-width: 1279px) {
+  .about-grid .column:first-child img {
+    max-height: 800px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .about-grid {
+    flex-direction: column;
+  }
+  .about-me .dot {
+    width: 40px;
+    height: 40px;
+  }
+  .about-me .dot-main {
+    margin-bottom: 40px;
+  }
+  .about-me .dot-joke {
+    top: -90px;
+    right: 20px;
+  }
+}
+@media (min-width: 780px) {
+  .container {
+    width: 80%;
+  }
+}
+@media (min-width: 780px) and (max-width: 1279px) {
+  .about-grid .column:first-child img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .about-me {
+    padding: 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1920px;
+  }
+  .about-grid {
+    flex-direction: row;
+  }
+  .about-grid .column:first-child {
+    max-width: 40%;
+  }
+  .about-me {
+    padding: 100px;
+  }
+  .about-me .dot {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+  }
+  .about-me .dot-main {
+    left: 40px;
+    top: 40px;
+  }
+  .about-me .dot-joke {
+    top: -90px;
+    right: 60px;
+  }
+}
 .section-books {
   padding: 80px 80px;
   background-color: hsla(48deg, 5%, 83%, 0.3);
@@ -595,6 +942,41 @@ nav {
 }
 .content-wrapper .cards ul {
   list-style-image: url("../rick-randy//images/bullet_character.svg");
+}
+
+.container {
+  margin: 0 auto;
+}
+
+footer {
+  background-color: hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  line-height: 28px;
+  text-align: center;
+}
+
+footer span {
+  color: hsl(43deg, 100%, 50%);
+}
+
+@media (max-width: 780px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (min-width: 781px) {
+  .container {
+    width: 80%;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1920px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

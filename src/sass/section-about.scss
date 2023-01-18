@@ -1,0 +1,65 @@
+.container {
+    margin: 0 auto;
+  }
+
+  .about-grid {
+    display: flex;
+  }
+
+  .about-grid .column:first-child {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .about-grid .about-me {
+    flex: 1;
+    background-color: hsl(43, 100%, 50%, 10%); // idk about this one, it's not in variables 🤷‍♂️
+  }
+
+  .about-grid .column:first-child img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-me {
+    position: relative;
+  }
+
+  .about-me h1,
+  .about-me p {
+    margin-bottom: 40px;
+  }
+
+  .about-me h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+
+  .about-me .dot {
+    background-color: $primary;
+    border-radius: 9999px;
+    display: grid;
+    place-items: center;
+  }
+
+  .about-me .dot-joke {
+    position: absolute;
+  }
+
+  .about-me-joke {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+  }
+
+  .about-me-joke span {
+    width: 220px;
+    font-family: "Chiller";
+    font-size: 28px;
+    text-align: center;
+    display: block;
+    rotate: -12.5deg;
+    margin-top: 10%;
+  }

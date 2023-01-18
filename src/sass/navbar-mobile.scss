@@ -1,0 +1,121 @@
+@media (max-width: 1280px) {
+  .nav-center,
+  .nav-right {
+    display: none;
+  }
+
+  .hamburger {
+    width: 40px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 9999;
+  }
+
+  .hamburger {
+    .line {
+      height: 7px;
+      border-radius: 9999px;
+    }
+  }
+
+  .hamburger {
+    .line {
+      &:last-child {
+        background-color: $primary;
+      }
+    }
+  }
+
+  .hamburger {
+    .line {
+      &:not(:last-child) {
+        margin-bottom: 5px;
+        background-color: $black;
+      }
+    }
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: $white;
+    width: 350px;
+    padding: 20px;
+    box-shadow: -10px 0px 35px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .mobile-menu {
+    .top-bar {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .logo {
+      margin-right: 10px;
+    }
+    .close {
+      .line {
+        &:first-child {
+          background-color: $black;
+          rotate: 45deg;
+        }
+        &:last-child {
+          background-color: $primary;
+          rotate: -45deg;
+          margin-top: -7px;
+        }
+        height: 7px;
+        width: 40px;
+        border-radius: 9999px;
+      }
+      margin-left: auto;
+    }
+    .menu-content {
+      .title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      ul {
+        li {
+          a {
+            &:hover {
+              text-decoration: underline;
+              text-decoration-color: $primary;
+              text-underline-offset: 6px;
+              text-decoration-thickness: 3px;
+            }
+            display: inline-block;
+            font-size: 18px;
+            color: $black;
+            margin-bottom: 20px;
+          }
+        }
+        margin-left: 20px;
+      }
+      flex: 1;
+    }
+    .menu-joke {
+      span {
+        font-family: "Chiller";
+        font-size: 22px;
+        width: 235px;
+      }
+      display: flex;
+      justify-content: flex-end;
+      text-align: center;
+      rotate: -12deg;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: 1281px) {
+  .hamburger {
+    display: none;
+  }
+}
