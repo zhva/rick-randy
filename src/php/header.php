@@ -24,70 +24,44 @@
         <div class="nav-left">
             <img src="<?php echo get_template_directory_uri();?>/images/Logo.svg" alt="Logo" />
         </div>
-        <div class="wrapper">
-            <?php
-                $menu_name = 'NavBar';
-                $menu_locations = get_nav_menu_locations();
-                $menu_id = $menu_locations[$menu_name];
-                $menu = wp_get_nav_menu_object($menu_id);
-                wp_nav_menu( array(
-                    'main' => $menu,
-                    'container' => 'div',
-                    'container_class' => 'nav-center',
-                    'menu_class' => 'menu',
-                    'fallback_cb' => false
-                ) );
-            ?>
-            <div class="nav-right">
-                <a href="#" class="button button-primary">Login</a>
-                <a href="#" class="button button-secondary">Sign Up</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <div class="mobile-menu d-none" id="nav">
-                <div class="top-bar">
-                    <img class="logo" src="Logo.svg" alt="Logo" height="50" width="50" />
+        <div class="wrapper" id="nav">
+            <div class="mobile-menu-heading">
+                <div class="hamburger" id="hamburgerId">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="top-bar d-none" id="topBar">
+                    <img class="logo" src="<?php echo get_template_directory_uri();?>/images/Logo.svg" alt="Logo" />
                     <div>Rick Randy</div>
-                    <div class="close">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
                 </div>
-                <div class="menu-content">
-                    <div class="title">Content</div>
+            </div>
+
+            <div class="menu-content d-none" id="menuContent">
+                <div class="title d-none" id="titleContent">Content</div>
+                <?php
+                    $menu_name = 'NavBar';
+                    $menu_locations = get_nav_menu_locations();
+                    $menu_id = $menu_locations[$menu_name];
+                    $menu = wp_get_nav_menu_object($menu_id);
+                    wp_nav_menu( array(
+                        'main' => $menu,
+                        'container' => 'div',
+                        'container_class' => 'nav-center',
+                        'menu_class' => 'menu',
+                        'fallback_cb' => false
+                    ) );
+                ?>
+                <div class="title d-none" id="titleAccount">Account</div>
+                <div class="nav-right">
                     <ul>
-                        <li>
-                            <a href="" class="">Home</a>
-                        </li>
-                        <li>
-                            <a href="" class="">About me</a>
-                        </li>
-                        <li>
-                            <a href="" class="">Books</a>
-                        </li>
-                        <li>
-                            <a href="" class="">Workshop</a>
-                        </li>
-                        <li>
-                            <a href="" class="">Consulting</a>
-                        </li>
-                    </ul>
-                <div class="title">Account</div>
-                    <ul>
-                        <li>
-                            <a href="" class="">Login</a>
-                        </li>
-                        <li>
-                            <a href="" class="">Sign Up</a>
-                        </li>
+                        <li><a href="#" class="button button-primary">Login</a></li>
+                        <li><a href="#" class="button button-secondary">Sign Up</a></li>
                     </ul>
                 </div>
-                <div class="menu-joke">
-                    <span>"Why do JavaScripters wear Glasses? Becuase they don't C#"</span>
-                </div>
+            </div>
+            <div class="menu-joke d-none" id="menuJoke">
+                <span>"Why do JavaScripters wear Glasses? Becuase they don't C#"</span>
             </div>
         </div>
     </nav>

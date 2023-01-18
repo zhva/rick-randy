@@ -31,7 +31,7 @@
 @media (min-width: 780px) and (max-width: 1279px) {
   .hero-grid {
     flex-direction: row;
-    gap: 80px;
+    gap: 60px;
   }
 
   .hero-title span {
@@ -52,7 +52,6 @@
     div {
       &:last-child {
         max-width: 50%;
-        height: 100%;
       }
     }
   }

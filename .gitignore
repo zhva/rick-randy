@@ -41,3 +41,4 @@ public/wp-content/uploads
 .DS_Store
 .vscode/
 
+**/style.css.map
