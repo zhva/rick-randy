@@ -82,9 +82,24 @@
             }
 
             li {
-                list-style-image: url('../rick-randy//images/bullet_character.svg');
+                list-style: none;
+                position: relative;
+                padding-left: 30px;
+                //list-style: url('../rick-randy//images/bullet_character.svg');
+                
             }
-            
+            li:before {
+                content: '';
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                background-image: url('../rick-randy//images/bullet_character.svg');
+                background-size: cover;
+                background-position: center;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
         }
         .button {
             align-self: center;
