@@ -530,6 +530,8 @@ nav {
 }
 
 .content-wrapper .info-wrapper {
+  margin-left: 18em;
+  margin-right: 18em;
   text-align: center;
   background-image: url("../rick-randy//images/brace_left.svg"), url("../rick-randy//images/brace_right.svg");
   background-position: left top, right top;
@@ -537,33 +539,62 @@ nav {
   background-size: contain;
   padding: 5px 5px 5px 5px;
 }
+.content-wrapper .info-wrapper p {
+  line-height: 20px;
+}
 .content-wrapper .cards {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px;
   justify-content: center;
   align-items: center;
+  padding: 0 15%;
 }
 .content-wrapper .cards .card-wrapper {
   display: flex;
   justify-content: center;
-  width: 300px;
-  height: 701px;
+  width: 100%;
+  height: 100%;
   background-color: hsla(48deg, 5%, 83%, 0.3);
   border-radius: 15px;
-  box-shadow: 2px 2px 2px 2px hsl(48deg, 5%, 83%);
+  box-shadow: -3px -3px 3px hsl(48deg, 5%, 83%), 3px 3px 3px hsl(48deg, 5%, 83%);
   padding: 40px 40px;
 }
 .content-wrapper .cards .card-header {
+  justify-content: first baseline;
   background-color: hsl(43deg, 100%, 50%);
+  font-weight: 600;
+  border-radius: 15px 15px 0 0;
+  box-shadow: -3px -3px 3px hsl(48deg, 5%, 83%), 3px 3px 3px hsl(48deg, 5%, 83%);
+  width: 100%;
+  height: 10%;
+  padding: 20px 80px;
+}
+.content-wrapper .cards .card-body {
+  justify-content: center;
 }
 .content-wrapper .cards h2 {
+  text-align: center;
   text-transform: none;
-  font-weight: semibold;
 }
-.content-wrapper .cards p {
+.content-wrapper .cards .card-money {
+  font-size: 72px;
+  padding: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.content-wrapper .cards .card-money > span {
+  font-size: 18px;
+}
+.content-wrapper .cards .card-custom {
+  text-align: center;
+}
+.content-wrapper .cards .card-heading {
   text-transform: uppercase;
-  font-weight: semibold;
+  font-weight: 600;
+}
+.content-wrapper .cards ul {
+  list-style-image: url("../rick-randy//images/bullet_character.svg");
 }
 
 /*# sourceMappingURL=style.css.map */

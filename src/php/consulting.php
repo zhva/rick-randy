@@ -17,13 +17,13 @@ Template Name: Consulting Template
         </div>
         <div class="cards">
             <div class="card-wrapper">
-                <div>
-                    <h2>Free</h2>
-                    <p><span>$</span>0</p>
-                    <p>Free includes</p>
+                <div class="card-body">
+                    <h2><span>Free</span></h2>
+                    <p class="card-money"><span>$</span>0</p>
+                    <p class="card-heading">Free includes</p><br>
                     <ul>
-                        <li>Review for one application of your choice</li>
-                        <li>30 minute video call where you can ask me anything</li>
+                        <li>Review for one application of your choice</li><br>
+                        <li>30 minute video call where you can ask me anything</li><br>
                     </ul>
                     <a href="#" class="button button-primary">Request</a>
                 </div>
@@ -32,27 +32,29 @@ Template Name: Consulting Template
                 <div class="card-header">
                     <p>Most popular</p>
                 </div>
-                <div>
-                    <h2>Premium</h2>
-                    <p><span>$</span>400</p>
-                    <p>Premium includes</p>
+                <br>
+                <br>
+                <div class="card-body">
+                    <h2><span>Premium</span></h2>
+                    <p class="card-money"><span>$</span>400</p>
+                    <p class="card-heading">Premium includes</p><br>
                     <ul>
-                        <li>Review for application(s) of your choice</li>
-                        <li>Video call where you can ask me anything</li>
-                        <li>Consulting for your web development project </li>
-                        <li>SEO and Google Analytics consulting</li>
+                        <li>Review for application(s) of your choice</li><br>
+                        <li>Video call where you can ask me anything</li><br>
+                        <li>Consulting for your web development project </li><br>
+                        <li>SEO and Google Analytics consulting</li><br>
                     </ul>
                     <a href="#" class="button button-primary">Request</a>
                 </div>
             </div>
             <div class="card-wrapper">
-                <div>
-                    <h2>Custom</h2>
-                    <p>Design a custom package for your business needs</p>
-                    <p>Custom includes</p>
+                <div class="card-body">
+                    <h2><span>Custom</span></h2>
+                    <p class="card-custom">Design a custom package for your business needs</p>
+                    <p class="card-heading">Custom pricing</p><br>
                     <ul>
-                        <li>Write a request with any service you require (pricing may vary)</li>
-                        <li>Video call where you can ask me anything</li>
+                        <li>Write a request with any service you require (pricing may vary)</li><br>
+                        <li>Video call where you can ask me anything</li><br>
                     </ul>
                     <a href="#" class="button button-primary">Request</a>
                 </div>

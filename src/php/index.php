@@ -128,7 +128,8 @@
             <div class="contact-info-wrapper" id="contact-info-wrapper">
                 <div class="form-wrapper">
                     <?php
-                        $form7 = wpcf7_contact_form(103);
+                    // ID bei Viktoriia 103, bei Katharina 80
+                        $form7 = wpcf7_contact_form(80);
                         echo $form7->form;
                     ?>
                 </div>
