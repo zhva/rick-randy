@@ -1,8 +1,8 @@
     <footer class="footer-wrapper">
-            <div>
-                <p><span>Design & Development</span>Viktoriia Zhuravel, Jennifer Scharinger, Katharina Bente</p>
-                <p><span>Photos & Pictures:</span>Unsplash, Viktoriia Zhuravel</p>
-                <p>© 2010 - 2023</p>
+            <div class="container">
+                <div><span>Design & Development:</span> Viktoriia Zhuravel, Jennifer Scharinger, Katharina Bente</div>
+                <div><span>Photos & Pictures:</span> Unsplash, Viktoriia Zhuravel</div>
+                <div>&copy; 2010 - 2023</div>
             </div>
     </footer>
     <script src="<?php echo get_template_directory_uri();?>/js/main.js" defer></script>

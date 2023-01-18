@@ -1,0 +1,19 @@
+@import "variables.scss";
+
+@media (max-width: 780px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 781px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: $max-width + px;
+  }
+}

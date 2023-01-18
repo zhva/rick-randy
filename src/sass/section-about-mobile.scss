@@ -1,0 +1,112 @@
+@media (max-width: 780px) {
+  .about-me {
+    padding: 60px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .about-grid {
+    .column {
+      &:first-child {
+        img {
+          max-height: 800px;
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+
+  .about-grid {
+    flex-direction: column;
+  }
+
+  .about-me {
+    .dot {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .about-me {
+    .dot-main {
+      margin-bottom: 40px;
+    }
+  }
+
+  .about-me {
+    .dot-joke {
+      top: -90px;
+      right: 20px;
+    }
+  }
+}
+
+@media (min-width: 780px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 780px) and (max-width: 1279px) {
+  .about-grid {
+    .column {
+      &:first-child {
+        img {
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+
+  .about-me {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: $max-width + px;
+  }
+
+  .about-grid {
+    flex-direction: row;
+  }
+
+  .about-grid {
+    .column {
+      &:first-child {
+        max-width: 40%;
+      }
+    }
+  }
+
+  .about-me {
+    padding: 100px;
+  }
+
+  .about-me {
+    .dot {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+    }
+  }
+
+  .about-me {
+    .dot-main {
+      left: 40px;
+      top: 40px;
+    }
+  }
+
+  .about-me {
+    .dot-joke {
+      top: -90px;
+      right: 60px;
+    }
+  }
+}

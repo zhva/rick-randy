@@ -1,0 +1,52 @@
+.container {
+    margin: 0 auto;
+  }
+
+  .hero-grid {
+    display: flex;
+    gap: 80px;
+    padding-top: 50px;
+  }
+
+  .hero-grid {
+    div {
+      &:last-child {
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .hero-name {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    span {
+      font-family: "Abril Fatface";
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: none;
+    }
+  }
+
+  .hero-title {
+    span {
+      &:nth-child(3) {
+        color: $primary;
+      }
+    }
+  }
+
+  .hero-grid {
+    p {
+      line-height: 28px;
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+  }
