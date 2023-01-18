@@ -1,5 +1,5 @@
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .d-flex {
@@ -11,27 +11,25 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
+    padding: 20px 5%;
   }
 
   .wrapper {
     display: flex;
     align-items: center;
   }
-
-  .nav-center ul li {
-    display: inline-block;
+  .menu-content {
+    display: flex;
   }
   .nav-center {
+    ul li {
+      display: inline-block;
+    }
     a {
       box-sizing: border-box;
       margin-right: 30px;
       color: $black;
       font-size: 22px;
-      /* &:active {
-        text-decoration: underline;
-        text-decoration-color: $primary;
-      } */
       &:hover {
         text-decoration: underline;
         text-decoration-color: $primary;
@@ -47,6 +45,9 @@ nav {
   }
 
   .nav-right {
+    ul li {
+      display: inline-block;
+    }
     a {
       &:first-child {
         margin-right: 10px;
