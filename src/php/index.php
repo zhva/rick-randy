@@ -27,30 +27,34 @@
         </section>
         <section class="section-about">
             <div class="about-grid">
+            <?php
+                $about_section = new WP_Query(array('category_name' => 'About me section', 'order' => 'ASC'));
+                if ($about_section -> have_posts()) :
+                    while ($about_section -> have_posts()) :
+                        $about_section -> the_post();
+            ?>
                 <div class="column">
-                    <img src="<?php echo get_template_directory_uri();?>/images/Ricks-photo.webp" alt="" />
+                    <?php the_post_thumbnail();?>
                 </div>
                 <div class="column about-me">
                     <div class="dot dot-main">
                         <img width="40" height="40" src="<?php echo get_template_directory_uri();?>/images/Separator.svg" alt="" />
                     </div>
-                    <h1 class="">Hi, I'm <span>Rick Randy</span></h1>
-                    <p>I work as web developer and trainer. I can help you to build web products or improve your
-                        existing applications. I’m available for freelance projects or specific knowledge trainings
-                        and workshops. Feel free to contact me with your requirements.
-                    </p>
-                    <p>More than 10 years of experience working with companies from all over the world. I design and
-                        develop web applications for business and personal use, and provide training to improve the
-                        skills of people. To share my accumulated knowledge, I also write books.
-                    </p>
-                    <button class="button button-secondary">More about me</button>
+                    <h1 class=""><?php  the_title(); ?></h1>
+                    <?php the_content(); ?>
+                    <button class="button button-secondary"><?php echo get_post_custom_values("btn-text")[0]; ?></button>
                     <div class="about-me-joke">
                         <div class="dot dot-joke">
                             <img width="40" height="40" src="<?php echo get_template_directory_uri();?>/images/Separator.svg" alt="" />
                         </div>
-                        <span>“Hold my beer, I’m going to learn a new JS Framework"</span>
+                        <span><?php echo get_post_custom_values("joke-text")[0]; ?></span>
                     </div>
                 </div>
+        <?php
+                endwhile;
+            endif;
+            wp_reset_postdata();
+        ?>
             </div>
         </section>
         <section class="section-books" id="Books">
