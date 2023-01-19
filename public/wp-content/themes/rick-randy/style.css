@@ -988,11 +988,14 @@ nav {
   background-color: hsla(48deg, 5%, 83%, 0.3);
   border-radius: 15px;
   box-shadow: 0 0 11px hsl(48deg, 5%, 83%);
-  padding: 40px 40px;
+  padding-bottom: 50px;
+  transform: scale(1);
+  transition: transform 0.5s ease;
 }
 .content-wrapper .cards .card-wrapper:hover {
   transform: scale(1.1);
   cursor: pointer;
+  transition: transform 0.5s ease;
 }
 .content-wrapper .cards .card-header {
   background-color: hsl(43deg, 100%, 50%);
@@ -1002,15 +1005,16 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 22.2%;
-  height: 5%;
-  position: absolute;
-  top: 38%;
-  left: 38.9%;
+  width: 100%;
+  padding: 15px 0;
 }
 .content-wrapper .cards .card-body {
   justify-content: center;
-  padding: 30px;
+}
+.content-wrapper .cards .card-body .card-info {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0 50px;
 }
 .content-wrapper .cards .card-body h2 {
   text-align: center;
@@ -1032,7 +1036,7 @@ nav {
 }
 .content-wrapper .cards .card-body .card-custom {
   text-align: center;
-  padding: 18px;
+  padding: 20px 18px;
 }
 .content-wrapper .cards .card-body .card-heading {
   text-transform: uppercase;
