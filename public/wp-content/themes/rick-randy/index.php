@@ -126,39 +126,42 @@
         ?>
         </section>
         <section class="section-contact">
-        <?php
-            $contact = new WP_Query(array('category_name' => 'Contact me', 'order' => 'ASC'));
-            if ($contact -> have_posts()) :
-              while ($contact -> have_posts()) :
-                $contact -> the_post();
-        ?>
-            <div class="contact-heading"><h2><?php  the_title(); ?></h2></div>
-            <div class="contact-info-wrapper" id="contact-info-wrapper">
-                <div class="form-wrapper">
-                    <?php
-                    // ID bei Viktoriia 103, bei Katharina 80
-                        $form7 = wpcf7_contact_form(80);
-                        echo $form7->form;
-                    ?>
+            <div class="extra-bg">
+            <?php
+                $contact = new WP_Query(array('category_name' => 'Contact me', 'order' => 'ASC'));
+                if ($contact -> have_posts()) :
+                while ($contact -> have_posts()) :
+                    $contact -> the_post();
+            ?>
+                <div class="contact-heading"><h2><?php  the_title(); ?></h2></div>
+                <div class="contact-info-wrapper" id="contact-info-wrapper">
+                    <div class="form-wrapper">
+                        <?php
+                        // ID bei Viktoriia 103, bei Katharina 80
+                            $form7 = wpcf7_contact_form(103);
+                            echo $form7->form;
+                        ?>
+                    </div>
+                    <div class="contact-info" id="contact-info">
+                        <div>
+                            <p><?php echo get_post_custom_values("text-phone")[0]; ?></p>
+                            <p><?php echo get_post_custom_values("number-phone")[0]; ?></p>
+                        </div>
+                        <div>
+                            <p><?php echo get_post_custom_values("text-email")[0]; ?></p>
+                            <p><?php echo get_post_custom_values("email")[0]; ?></p>
+                        </div>
+                        <div class="stamp-wrapper">
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-info" id="contact-info">
-                    <div>
-                        <p><?php echo get_post_custom_values("text-phone")[0]; ?></p>
-                        <p><?php echo get_post_custom_values("number-phone")[0]; ?></p>
-                    </div>
-                    <div>
-                        <p><?php echo get_post_custom_values("text-email")[0]; ?></p>
-                        <p><?php echo get_post_custom_values("email")[0]; ?></p>
-                    </div>
-                    <div class="stamp-wrapper">
-                    </div>
-                </div>
+            <?php
+                    endwhile;
+                endif;
+                wp_reset_postdata();
+            ?>
             </div>
-        <?php
-                endwhile;
-            endif;
-            wp_reset_postdata();
-        ?>
         </section>
+        <div class="footer-additional-bg"></div>
     </main>
     <?php get_footer(); ?>

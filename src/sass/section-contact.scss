@@ -1,9 +1,13 @@
 .section-contact {
-    padding: 80px;
-    background-color: $bg_primary;
+    .extra-bg {
+        padding: 80px;
+        background-color: $bg_primary ;
+    }
+    background-color: $white;
     display: flex;
     flex-direction: column;
     gap: 5%;
+    box-shadow: 0px 10px 10px 5px $shadow-black;
     .contact-heading {
         align-self: flex-end;
         margin-bottom: 80px;
