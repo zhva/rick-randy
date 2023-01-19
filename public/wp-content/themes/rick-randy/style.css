@@ -214,7 +214,6 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 5%;
 }
 
 .wrapper {
@@ -261,6 +260,9 @@ nav {
 }
 
 @media (max-width: 1281px) {
+  nav {
+    padding: 20px 5%;
+  }
   .hamburger {
     width: 40px;
     flex-grow: 0;
@@ -393,6 +395,9 @@ nav {
   }
 }
 @media (min-width: 1281px) {
+  nav {
+    padding: 20px 30px;
+  }
   .hamburger {
     display: none;
   }
@@ -871,6 +876,7 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 0 5%;
+  margin-bottom: 80px;
 }
 .content-wrapper .content-grid .grid-elem {
   display: flex;
@@ -920,12 +926,19 @@ nav {
 }
 
 @media (max-width: 1280px) {
+  .content-wrapper {
+    gap: 50px;
+  }
+  .content-wrapper .heading h1 {
+    margin-top: 30px;
+  }
   .content-wrapper .content-grid {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    row-gap: 20px;
+    row-gap: 50px;
+    margin-bottom: 50px;
   }
   .content-wrapper .content-grid .grid-elem:nth-of-type(1) {
     order: 1;
@@ -943,9 +956,13 @@ nav {
     text-align: left;
   }
 }
+.consulting-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
 .content-wrapper .info-wrapper {
-  margin-left: 18em;
-  margin-right: 18em;
   text-align: center;
   background-image: url("../rick-randy//images/brace_left.svg"), url("../rick-randy//images/brace_right.svg");
   background-position: left top, right top;
@@ -953,16 +970,14 @@ nav {
   background-size: contain;
   padding: 5px 5px 5px 5px;
 }
-.content-wrapper .info-wrapper p {
-  line-height: 20px;
-}
 .content-wrapper .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 40px;
+  grid-column-gap: 80px;
   justify-content: center;
   align-items: center;
-  padding: 0 15%;
+  padding: 0 5%;
+  margin-bottom: 80px;
 }
 .content-wrapper .cards .card-wrapper {
   display: flex;
@@ -1003,12 +1018,17 @@ nav {
 }
 .content-wrapper .cards .card-body .card-money {
   font-size: 72px;
-  padding: 30px;
   font-weight: 600;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
 }
 .content-wrapper .cards .card-body .card-money span {
   font-size: 18px;
+  align-self: flex-start;
+  margin-top: 10px;
 }
 .content-wrapper .cards .card-body .card-custom {
   text-align: center;
@@ -1022,6 +1042,7 @@ nav {
   list-style: none;
   position: relative;
   padding-left: 30px;
+  line-height: 1.5;
 }
 .content-wrapper .cards .card-body li:before {
   content: "";

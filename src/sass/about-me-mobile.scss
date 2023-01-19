@@ -1,12 +1,17 @@
 @media (max-width: 1280px) {
     .content-wrapper {
+        gap: 50px;
+        .heading h1 {
+            margin-top: 30px;
+        }
         .content-grid {
             display: grid;
             grid-template-columns: 1fr;
             justify-content: center;
             align-items:center;
-            row-gap: 20px;
-            
+            row-gap: 50px;
+            margin-bottom: 50px;
+
             .grid-elem:nth-of-type(1) {
                 order: 1;
             }
@@ -21,7 +26,7 @@
             }
             .grid-elem:nth-of-type(4) .grid-item {
                 text-align: left;
-            }            
+            }
         }
     }
 }
