@@ -1,7 +1,9 @@
 
 const firstColumn = document.getElementById('contact-info-wrapper');
 let secondColumn = document.getElementById('contact-info');
-secondColumn.style.height = firstColumn.clientHeight + "px";
+if(secondColumn) {
+  secondColumn.style.height = firstColumn.clientHeight + "px";
+}
 
 const nav = document.getElementById('nav');
 const button = document.getElementById('hamburgerId');

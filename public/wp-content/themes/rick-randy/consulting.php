@@ -5,13 +5,13 @@ Template Name: Consulting Template
  ?>
 <?php wp_body_open();?>
     <?php get_header(); ?>
-    <main class="content-wrapper">
+    <main class="content-wrapper consulting-wrapper">
         <div class="consulting-info info-wrapper">
-            <div>
+            <div class="heading-wrapper-braces">
                 <h2>Your <span>wish</span> is my <span>command</span></h2>
-                <p>Over the past years I gained a lot of expertise in my department and customer service.<br>
+                <p>Over the past years I gained a lot of expertise in my department and customer service.
                     I want to share this knowledge with every web developer who is willing to learn and get
-                    better in their field. <br>You can either book the free package or full premium package.
+                    better in their field. You can either book the free package or full premium package.
                     You can also customize a package for you business needs.</p>
             </div>
         </div>
@@ -25,8 +25,8 @@ Template Name: Consulting Template
                         <li>Review for one application of your choice</li><br>
                         <li>30 minute video call where you can ask me anything</li><br>
                     </ul>
-                </div> 
-                <a href="#" class="button button-primary">Request</a>   
+                </div>
+                <a href="#" class="button button-primary">Request</a>
             </div>
             <div class="card-wrapper">
                 <div class="card-body">
@@ -41,7 +41,7 @@ Template Name: Consulting Template
                         <li>Video call where you can ask me anything</li><br>
                         <li>Consulting for your web development project </li><br>
                         <li>SEO and Google Analytics consulting</li><br>
-                    </ul>  
+                    </ul>
                 </div>
                 <a href="#" class="button button-primary">Request</a>
             </div>

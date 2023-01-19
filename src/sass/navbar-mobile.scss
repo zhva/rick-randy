@@ -1,4 +1,7 @@
 @media (max-width: 1281px) {
+  nav {
+    padding: 20px 5%;
+  }
   .hamburger {
     width: 40px;
     flex-grow: 0;
@@ -144,6 +147,9 @@
 }
 
 @media (min-width: 1281px) {
+  nav {
+    padding: 20px 30px;
+  }
   .hamburger {
     display: none;
   }
