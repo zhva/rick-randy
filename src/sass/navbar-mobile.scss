@@ -12,6 +12,10 @@
     align-self: center;
   }
 
+  .hamburger:hover {
+    cursor: pointer;
+  }
+
   .hamburger {
     .line {
       height: 7px;

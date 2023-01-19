@@ -284,6 +284,9 @@ nav {
     order: 3;
     align-self: center;
   }
+  .hamburger:hover {
+    cursor: pointer;
+  }
   .hamburger .line {
     height: 7px;
     border-radius: 9999px;
