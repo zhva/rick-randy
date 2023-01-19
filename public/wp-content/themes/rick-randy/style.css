@@ -1064,6 +1064,31 @@ nav {
   align-self: center;
 }
 
+@media (max-width: 1280px) {
+  h2 {
+    font-size: 24px;
+  }
+  p, li {
+    font-size: 14px;
+  }
+  .content-wrapper .cards {
+    display: grid;
+    grid-template-columns: none;
+    row-gap: 50px;
+    margin-bottom: 50px;
+  }
+  .content-wrapper .cards .card-body h2 {
+    text-align: left;
+  }
+  .content-wrapper .cards .card-body .card-money {
+    font-size: 48px;
+    float: right;
+    margin-top: -80px;
+  }
+  .content-wrapper .cards .card-body .card-money span {
+    margin-top: 25px;
+  }
+}
 .container {
   margin: 0 auto;
 }
