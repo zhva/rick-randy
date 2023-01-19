@@ -4,19 +4,25 @@
         <section class="section-hero">
             <div class="hero-grid">
                 <div>
-                    <div class="hero-name">Rick Randy</div>
-                    <h1 class="hero-title">
-                        <span>Why you </span>
-                        <span>rightfully </span>
-                        <span>hate </span>
-                        <span>JavaScript</span>
-                    </h1>
-                    <p>The most loved book series in the web community in 2021. The series has won the "Best Book for Web Developers" award for the past 3 years. The final book in this series, "JavaScript - The Apocalypse Is Coming", is coming soon. Get your copy here!</p>
-                    <button class="button button-primary">Learn more</button>
+                <?php
+                    $hero_section = new WP_Query(array('category_name' => 'Hero', 'order' => 'ASC'));
+                    if ($hero_section -> have_posts()) :
+                        while ($hero_section -> have_posts()) :
+                            $hero_section -> the_post();
+                ?>
+                    <div class="hero-name"><?php echo get_post_custom_values("author")[0]; ?></div>
+                    <h1 class="hero-title"><?php  the_title(); ?></h1>
+                    <?php the_content(); ?>
+                    <button class="button button-primary"><?php echo get_post_custom_values("btn-text")[0]; ?></button>
                 </div>
                 <div>
-                    <img src="<?php echo get_template_directory_uri();?>/images/Book.webp" alt="" />
+                    <?php the_post_thumbnail();?>
                 </div>
+            <?php
+                    endwhile;
+                endif;
+                wp_reset_postdata();
+            ?>
             </div>
         </section>
         <section class="section-about">
