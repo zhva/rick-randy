@@ -39,9 +39,7 @@ Template Name: Consulting Template
                         <h2><?php  the_title(); ?></h2>
                         <p class="<?php echo (get_the_title() == "<span>Custom</span>") ? "card-custom" : "card-money" ?>"> <?php echo get_post_custom_values("service-cost")[0]; ?></p>
                         <p class="card-heading"><?php echo get_post_custom_values("service-contents")[0]; ?></p><br>
-                        <ul>
-                            <?php the_content(); ?>
-                        </ul>
+                        <?php the_content(); ?>
                     </div>
                 </div>
                 <a href="#" class="button button-primary"><?php echo get_post_custom_values("btn-text")[0]; ?></a>
